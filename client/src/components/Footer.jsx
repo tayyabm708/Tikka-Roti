@@ -13,7 +13,7 @@ export default function FooterCom() {
               to="/"
               className="self-center whitespace-nowrap text-lg sm:text-xl font-semibold dark:text-white"
             >
-              <span className="px-2 py-1 bg-gradient-to-r  from-orange-500 via-amber-900 to-black rounded-lg rounded-lg text-white">
+              <span className="px-2 py-1 bg-gradient-to-r  from-orange-500 via-amber-900 to-black rounded-lg text-white">
                 Tikka
               </span>
               Roti
