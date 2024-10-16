@@ -9,30 +9,31 @@ import {
   TextInput,
 } from "flowbite-react";
 import { Link } from "react-router-dom";
+import TikkaRotiPNG from "../assets/TIKKA ROTI FOOD TRUCK/logo 1.png";
 
 export default function BookUs() {
   const [formData, setformData] = useState({
     "First Name": "",
     "Last Name": "",
-    "Email": "",
+    Email: "",
     "Phone Number": "",
-    "Address": "",
-    // "Menu": "",
+    Address: "",
+    Menu: "",
     "Minimum Guests": "",
     "Maximum Guests": "",
     "Allergies and Special Diets": "",
     "Booking Date": "",
     "Booking Time": "",
     "Extra Additions": "",
-    "Additional Information": ""
+    "Additional Information": "",
   });
   const [errorMessage, setErrorMessage] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
-  console.log(formData)
+  console.log(formData);
 
   const handleChange = (e) => {
-    console.log(e.target.value)
-    setformData({ ...formData, [e.target.id]: e.target.value});
+    console.log(e.target.value);
+    setformData({ ...formData, [e.target.id]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
@@ -54,18 +55,18 @@ export default function BookUs() {
       );
       setformData({
         "First Name": "",
-          "Last Name": "",
-          "Email": "",
-          "Phone Number": "",
-          "Address": "",
-          // "Menu": "",
-          "Minimum Guests": "",
-          "Maximum Guests": "",
-          "Allergies and Special Diets": "",
-          "Booking Date": "",
-          "Booking Time": "",
-          "Extra Additions": "",
-          "Additional Information": ""
+        "Last Name": "",
+        Email: "",
+        "Phone Number": "",
+        Address: "",
+        Menu: "",
+        "Minimum Guests": "",
+        "Maximum Guests": "",
+        "Allergies and Special Diets": "",
+        "Booking Date": "",
+        "Booking Time": "",
+        "Extra Additions": "",
+        "Additional Information": "",
       });
     } catch (error) {
       setErrorMessage("Something went wrong, please try again later.");
@@ -74,32 +75,73 @@ export default function BookUs() {
   return (
     <div className="min-h-screen mt-20">
       <p className="text-center text-3xl font-bold pb-4">
-        <span className="px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white">
+        {/* <span className="px-2 py-1 bg-gradient-to-r from-orange-500 via-amber-900 to-black rounded-lg text-white">
           Book
-        </span>
-        Us
+        </span> */}
+        Book Us 
       </p>
-      <div className="flex p-3 max-w-3xl mx-auto flex-col md:flex-row md:items-center gap-5 ">
+      <div className="flex p-3 max-w-3xl mx-auto flex-col md:flex-row md:items-center gap-5  ">
         {/*left*/}
         <div className="flex-1">
-          <Link to="/" className="  font-bold dark:text-white text-4xl">
-            <span className="px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white">
-              Buzz
-            </span>
-            Blog
-          </Link>
-          <p className="text-sm mt-5">
-            This is a demo project, You can sign up with your email and password
-            or with Google.
-          </p>
+          {/* Contact Information */}
+          <div className="mt-5">
+            {/* Location */}
+            <p className="text-md text-gray-600 dark:text-gray-400">
+              <strong>Location:</strong> 123 Food Street, Stockholm, Sweden
+            </p>
+
+            {/* Phone Number */}
+            <p className="text-md text-gray-600 dark:text-gray-400 mt-2">
+              <strong>Phone:</strong> +46 123 456 789
+            </p>
+
+            {/* Email */}
+            <p className="text-md text-gray-600 dark:text-gray-400 mt-2">
+              <strong>Email:</strong> contact@tikkaroti.com
+            </p>
+
+            {/* Social Media Links */}
+            <div className="mt-4 flex space-x-4">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://img.icons8.com/fluency/48/facebook.png"
+                  alt="Facebook"
+                  className="w-6 h-6"
+                />
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://img.icons8.com/fluency/48/instagram-new.png"
+                  alt="Instagram"
+                  className="w-6 h-6"
+                />
+              </a>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://img.icons8.com/fluency/48/tiktok.png"
+                  alt="Twitter"
+                  className="w-6 h-6"
+                />
+              </a>
+            </div>
+          </div>
         </div>
 
         {/*right*/}
         <div className="flex-1">
-          <form
-            className="flex flex-col gap-4"
-            onSubmit={handleSubmit}
-          >
+          <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
             <div>
               <Label value="First Name" />
               <TextInput
@@ -251,12 +293,19 @@ export default function BookUs() {
                 onChange={handleChange}
               />
             </div>
-            <Button gradientDuoTone="purpleToPink" type="submit">
+            <Button gradientDuoTone="pinkToOrange" type="submit">
               Submit
             </Button>
-            {errorMessage && <Alert className="mt-5" color="failure">{errorMessage}</Alert>}
-            {successMessage && <Alert className="mt-5" color="success">{successMessage}</Alert>}
-
+            {errorMessage && (
+              <Alert className="mt-5" color="failure">
+                {errorMessage}
+              </Alert>
+            )}
+            {successMessage && (
+              <Alert className="mt-5" color="success">
+                {successMessage}
+              </Alert>
+            )}
           </form>
         </div>
       </div>

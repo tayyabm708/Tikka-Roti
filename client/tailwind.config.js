@@ -7,7 +7,11 @@ export default {
     flowbite.content(),
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Permanent Marker', 'cursive']
+      }
+    },
   },
   plugins: [
     flowbite.plugin(),

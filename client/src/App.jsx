@@ -10,7 +10,7 @@ import BookUs from './pages/BookUs'
 import CrispProvider from './components/CrispProvider'
 export default function App() {
   return (
-    <div>
+    <div className='bg-[#fef3d8] min-h-screen'>
       <BrowserRouter>
       <Header />
       <CrispProvider />
@@ -19,7 +19,6 @@ export default function App() {
       <Route path="/menu" element={<Menu />} />
       <Route path="/info" element={<Information />} />
       <Route path="/book" element={<BookUs />} />
-
       </Routes>
       <Footer />
       
