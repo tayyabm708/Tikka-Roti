@@ -1,0 +1,55 @@
+MENU:
+
+Burgers:
+	Smash Burgers
+	Smokey Barbeque
+	Jalapeno 
+	Truffle Burger
+	Halloumi
+	Chipotle
+
+Grekisk Streetfood:
+	Pita Gyros
+	Souvlaki Chicken
+	Soutzokakia
+	Pita Halloumi
+	Gyros Tallrik
+
+Indisk/Pakistani:
+	Chiken Tikka
+	Chicken Tandoori
+	Pakora vegetarisk
+	Pakora Vegan
+	Pakora Gluten free Tallrik
+	Chicken Tikka Talrik
+	Chicken Tandoori Tallrik
+
+
+Mexikansk Streetfood:
+	Beef tacos
+	Fajita Tacos
+	Quesadilla Chicken Tacos
+	Texas Chilli Tacos
+	Vegetarian Frijoles Tacos
+	Fish Tacos
+
+Asiatisk Streetfood:
+	Crispigt Chicken Bao
+	Halloumi Bao
+	Tempura Bao
+	Tofu Bao
+	Gyokatsu Bao
+	Yakisoba Nudlar
+
+
+WHY TIKKA ROTI?
+	Planerar du för födelsedag, företag, bröllop eller någon annan 	typ av sammankomst?
+
+	Det bästa valet för ditt evenemang är att anlita vår foodtruck 	eller catering. Vi erbjuder mat och service av högsta klass – 	oavsett om det är för en stor fest, bröllop eller en 	företagsmiddag. Vår passion för matlagning och service kommer 	att ge ditt evenemang det lilla extra som gör skillnad. Låt oss 	hjälpa dig skapa en oförglömlig upplevelse!
+
+
+	
+	
+	
+
+ 

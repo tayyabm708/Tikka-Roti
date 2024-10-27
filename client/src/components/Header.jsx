@@ -2,9 +2,8 @@ import React from "react";
 import { Navbar } from "flowbite-react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import { BsInstagram, BsTwitter, BsTiktok, BsFacebook } from "react-icons/bs";
-import TikkaRotiPNG from '../assets/TIKKA ROTI FOOD TRUCK/logo 1.png';
-
+import { BsInstagram, BsTiktok, BsFacebook } from "react-icons/bs";
+import TikkaRotiPNG from "../assets/TIKKA ROTI FOOD TRUCK/logo 1.png";
 
 export default function Header() {
   const path = useLocation().pathname;
@@ -18,24 +17,25 @@ export default function Header() {
           Tikka
         </span>
         Roti */}
-        <img 
+        <img
           className="h-20 w-20 md:h-24 md:w-24 lg:h-32 lg:w-32 mx-auto mb-4"
-          src={TikkaRotiPNG} alt="" 
+          src={TikkaRotiPNG}
+          alt=""
         />
       </Link>
-      
+
       <Navbar.Collapse>
         <Navbar.Link active={path === "/"} as={"div"}>
-          <Link to="/">Home</Link>
+          <Link to="/">Hem</Link>
         </Navbar.Link>
         <Navbar.Link active={path === "/menu"} as={"div"}>
-          <Link to="/menu">Menu</Link>
+          <Link to="/menu">Meny</Link>
         </Navbar.Link>
         <Navbar.Link active={path === "/info"} as={"div"}>
           <Link to="/info">Information</Link>
         </Navbar.Link>
         <Navbar.Link active={path === "/book"} as={"div"}>
-          <Link to="/book">Book Us</Link>
+          <Link to="/book">Boka Oss</Link>
         </Navbar.Link>
       </Navbar.Collapse>
 
@@ -51,9 +51,6 @@ export default function Header() {
         </Link>
       </div>
       <Navbar.Toggle />
-      
     </Navbar>
-
-    
   );
 }

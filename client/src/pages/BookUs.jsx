@@ -1,13 +1,5 @@
 import React, { useState } from "react";
-import {
-  Alert,
-  Button,
-  Label,
-  Radio,
-  Spinner,
-  Textarea,
-  TextInput,
-} from "flowbite-react";
+import { Alert, Button, Label, Textarea, TextInput } from "flowbite-react";
 import { Link } from "react-router-dom";
 import TikkaRotiPNG from "../assets/TIKKA ROTI FOOD TRUCK/logo 1.png";
 
@@ -29,10 +21,8 @@ export default function BookUs() {
   });
   const [errorMessage, setErrorMessage] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
-  console.log(formData);
 
   const handleChange = (e) => {
-    console.log(e.target.value);
     setformData({ ...formData, [e.target.id]: e.target.value });
   };
 
@@ -49,6 +39,7 @@ export default function BookUs() {
       });
       if (!response.ok) {
         setErrorMessage("Something went wrong, please try again later.");
+        return;
       }
       setSuccessMessage(
         "Your booking has been submitted successfully. We will get back to you soon"
@@ -72,30 +63,31 @@ export default function BookUs() {
       setErrorMessage("Something went wrong, please try again later.");
     }
   };
+
   return (
     <div className="min-h-screen mt-20">
-      <p className="text-center text-3xl font-bold pb-4">
-        {/* <span className="px-2 py-1 bg-gradient-to-r from-orange-500 via-amber-900 to-black rounded-lg text-white">
-          Book
-        </span> */}
-        Book Us 
-      </p>
-      <div className="flex p-3 max-w-3xl mx-auto flex-col md:flex-row md:items-center gap-5  ">
-        {/*left*/}
+      <p className="text-center text-3xl font-bold pb-4">BOKA OSS</p>
+      <div className="flex p-3 max-w-3xl mx-auto flex-col md:flex-row md:items-center gap-5">
+        {/* Left Section */}
         <div className="flex-1">
           {/* Contact Information */}
           <div className="mt-5">
-            {/* Location */}
-            <p className="text-md text-gray-600 dark:text-gray-400">
-              <strong>Location:</strong> 123 Food Street, Stockholm, Sweden
-            </p>
+            {/* Google Maps Embed */}
+            <iframe
+              className="mb-4"
+              title="Google Maps Location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d272887.75788486586!2d11.564208266019989!3d57.70056378561675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464f8e67966c073f%3A0x4019078290e7c40!2sGothenburg%2C%20Sweden!5e0!3m2!1sen!2s!4v1729839134044!5m2!1sen!2s"
+              width="100%"
+              height="300"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+            ></iframe>
 
-            {/* Phone Number */}
+            {/* Additional Contact Info */}
             <p className="text-md text-gray-600 dark:text-gray-400 mt-2">
               <strong>Phone:</strong> +46 123 456 789
             </p>
-
-            {/* Email */}
             <p className="text-md text-gray-600 dark:text-gray-400 mt-2">
               <strong>Email:</strong> contact@tikkaroti.com
             </p>
@@ -139,7 +131,7 @@ export default function BookUs() {
           </div>
         </div>
 
-        {/*right*/}
+        {/* Right Section - Booking Form */}
         <div className="flex-1">
           <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
             <div>
@@ -148,7 +140,6 @@ export default function BookUs() {
                 type="text"
                 placeholder="John"
                 id="First Name"
-                name="first-name"
                 value={formData["First Name"]}
                 onChange={handleChange}
                 required
@@ -160,7 +151,6 @@ export default function BookUs() {
                 type="text"
                 placeholder="Doe"
                 id="Last Name"
-                name="last-name"
                 value={formData["Last Name"]}
                 onChange={handleChange}
                 required
@@ -172,7 +162,6 @@ export default function BookUs() {
                 type="email"
                 placeholder="name@company.com"
                 id="Email"
-                name="email"
                 value={formData["Email"]}
                 onChange={handleChange}
                 required
@@ -184,7 +173,6 @@ export default function BookUs() {
                 type="tel"
                 placeholder="+46782591288"
                 id="Phone Number"
-                name="phone-number"
                 value={formData["Phone Number"]}
                 onChange={handleChange}
                 required
@@ -196,7 +184,6 @@ export default function BookUs() {
                 type="text"
                 placeholder="Enter your booking address here"
                 id="Address"
-                name="address"
                 value={formData["Address"]}
                 onChange={handleChange}
                 required
@@ -205,10 +192,8 @@ export default function BookUs() {
             <div>
               <Label value="Menu" />
               <Textarea
-                type="text"
-                placeholder="eg., Tandoori Chicken Rulle, Chicken Tikka Rulle"
+                placeholder="e.g., Tandoori Chicken Rulle, Chicken Tikka Rulle"
                 id="Menu"
-                name="menu"
                 value={formData["Menu"]}
                 onChange={handleChange}
                 required
@@ -218,9 +203,8 @@ export default function BookUs() {
               <Label value="Minimum Number" />
               <TextInput
                 type="number"
-                placeholder="Enter minimum number of guests "
+                placeholder="Enter minimum number of guests"
                 id="Minimum Guests"
-                name="minimum-guests"
                 value={formData["Minimum Guests"]}
                 onChange={handleChange}
                 required
@@ -232,7 +216,6 @@ export default function BookUs() {
                 type="number"
                 placeholder="Enter maximum number of guests"
                 id="Maximum Guests"
-                name="maximum-guests"
                 value={formData["Maximum Guests"]}
                 onChange={handleChange}
                 required
@@ -241,10 +224,8 @@ export default function BookUs() {
             <div>
               <Label value="Allergies and Special Diets" />
               <Textarea
-                type="text"
-                placeholder="If any allergies/ special diet, please specify"
+                placeholder="If any allergies/special diet, please specify"
                 id="Allergies and Special Diets"
-                name="allergies-special-diets"
                 value={formData["Allergies and Special Diets"]}
                 onChange={handleChange}
               />
@@ -252,10 +233,8 @@ export default function BookUs() {
             <div>
               <Label value="Booking Date and Time" />
               <TextInput
-                className="pb-2"
                 type="date"
                 id="Booking Date"
-                name="booking-date"
                 value={formData["Booking Date"]}
                 onChange={handleChange}
                 required
@@ -263,7 +242,6 @@ export default function BookUs() {
               <TextInput
                 type="time"
                 id="Booking Time"
-                name="booking-time"
                 value={formData["Booking Time"]}
                 onChange={handleChange}
                 required
@@ -272,11 +250,8 @@ export default function BookUs() {
             <div>
               <Label value="Extra additions" />
               <Textarea
-                type="text"
-                className=""
-                placeholder="eg., hostess, decoration, DJ, FT, platters, tablecloths, lanterns, serving staff"
+                placeholder="e.g., hostess, decoration, DJ, FT, platters, tablecloths, lanterns, serving staff"
                 id="Extra Additions"
-                name="extra-additions"
                 value={formData["Extra Additions"]}
                 onChange={handleChange}
               />
@@ -284,29 +259,19 @@ export default function BookUs() {
             <div>
               <Label value="Additional Information" />
               <Textarea
-                type="text"
-                className=""
                 placeholder="Tell us more about your event"
-                name="additional-info"
                 id="Additional Information"
                 value={formData["Additional Information"]}
                 onChange={handleChange}
               />
             </div>
             <Button gradientDuoTone="pinkToOrange" type="submit">
-              Submit
+              Överlämna
             </Button>
-            {errorMessage && (
-              <Alert className="mt-5" color="failure">
-                {errorMessage}
-              </Alert>
-            )}
-            {successMessage && (
-              <Alert className="mt-5" color="success">
-                {successMessage}
-              </Alert>
-            )}
           </form>
+
+          {errorMessage && <Alert color="failure">{errorMessage}</Alert>}
+          {successMessage && <Alert color="success">{successMessage}</Alert>}
         </div>
       </div>
     </div>
