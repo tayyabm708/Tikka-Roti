@@ -19,6 +19,7 @@ export default function BookUs() {
     "Extra Additions": "",
     "Additional Information": "",
   });
+  const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
 
@@ -30,6 +31,7 @@ export default function BookUs() {
     e.preventDefault();
 
     try {
+      setLoading(true);
       const response = await fetch("https://formspree.io/f/movqaddg", {
         method: "POST",
         headers: {
@@ -39,8 +41,11 @@ export default function BookUs() {
       });
       if (!response.ok) {
         setErrorMessage("Something went wrong, please try again later.");
+        setLoading(false);
+        setErrorMessage("");
         return;
       }
+      setLoading(false);
       setSuccessMessage(
         "Your booking has been submitted successfully. We will get back to you soon"
       );
@@ -59,7 +64,9 @@ export default function BookUs() {
         "Extra Additions": "",
         "Additional Information": "",
       });
+      setSuccessMessage("");
     } catch (error) {
+      setLoading(false);
       setErrorMessage("Something went wrong, please try again later.");
     }
   };
@@ -266,12 +273,20 @@ export default function BookUs() {
               />
             </div>
             <Button gradientDuoTone="pinkToOrange" type="submit">
-              Överlämna
+              {loading == true ? "Loading..." : " Överlämna"}
             </Button>
           </form>
 
-          {errorMessage && <Alert color="failure">{errorMessage}</Alert>}
-          {successMessage && <Alert color="success">{successMessage}</Alert>}
+          {errorMessage && (
+            <Alert color="failure" className="mt-3">
+              {errorMessage}
+            </Alert>
+          )}
+          {successMessage && (
+            <Alert color="success" className="mt-3">
+              {successMessage}
+            </Alert>
+          )}
         </div>
       </div>
     </div>

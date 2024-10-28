@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Button } from "flowbite-react";
+import { Link } from "react-router-dom";
 
 export default function Information() {
   return (
@@ -14,7 +15,7 @@ export default function Information() {
         världen, levererad med exceptionell service!
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
         {/* First Card */}
         <Card className="shadow-md hover:shadow-xl transition-shadow duration-300 p-5 bg-white border rounded-lg">
           <h3 className="text-xl font-semibold mb-2 text-gray-800">
@@ -43,25 +44,25 @@ export default function Information() {
             att tillgodose speciella önskemål och kostbehov.
           </p>
         </Card>
-
-        <Card className="shadow-md hover:shadow-xl transition-shadow duration-300 p-5 bg-white border rounded-lg">
-          <h3 className="text-xl font-semibold mb-2 text-gray-800">
-            En Oförglömlig Upplevelse
-          </h3>
-          <p className="text-gray-700">
-            Tikka Roti började sin resa 2017, med ett uppdrag att erbjuda fusion
-            gourmetmat till sammankomster av alla slag. Under åren har vi växt
-            till en flotta av tre food trucks, alla utrustade för att leverera
-            en unik kulinarisk upplevelse inspirerad av smaker från hela
-            världen. Denna expansion har gjort det möjligt för oss att samtidigt
-            betjäna flera kunder, så som under studentfiranden i Sverige och
-            avslutningsceremonier. Oavsett om det är en festlig högtid, ett
-            företagsevenemang eller något speciellt firande, är Tikka Roti
-            stolta över att tillföra varje tillfälle en minnesvärd touch med
-            fräscha, färgstarka rätter och enastående service.
-          </p>
-        </Card>
       </div>
+
+      <Card className="shadow-md hover:shadow-xl transition-shadow duration-300 p-5 bg-white border rounded-lg">
+        <h3 className="text-xl font-semibold mb-2 text-gray-800">
+          Tikka Roti: Din Smakupplevelse på Hjul
+        </h3>
+        <p className="text-gray-700">
+          Tikka Roti började sin resa 2017, med ett uppdrag att erbjuda fusion
+          gourmetmat till sammankomster av alla slag. Under åren har vi växt
+          till en flotta av tre food trucks, alla utrustade för att leverera en
+          unik kulinarisk upplevelse inspirerad av smaker från hela världen.
+          Denna expansion har gjort det möjligt för oss att samtidigt betjäna
+          flera kunder, så som under studentfiranden i Sverige och
+          avslutningsceremonier. Oavsett om det är en festlig högtid, ett
+          företagsevenemang eller något speciellt firande, är Tikka Roti stolta
+          över att tillföra varje tillfälle en minnesvärd touch med fräscha,
+          färgstarka rätter och enastående service.
+        </p>
+      </Card>
 
       {/* Call to Action Section */}
       <div className="mt-10 text-center flex flex-col items-center justify-center">
@@ -74,13 +75,15 @@ export default function Information() {
           vägen för att säkerställa att ditt evenemang blir en succé.
         </p>
 
-        <Button
-          gradientDuoTone="pinkToOrange"
-          size="lg"
-          className="hover:bg-pink-700 transition-colors duration-300"
-        >
-          BOKA OSS NU
-        </Button>
+        <Link to="/book">
+          <Button
+            gradientDuoTone="pinkToOrange"
+            size="lg"
+            className="hover:bg-pink-700 transition-colors duration-300"
+          >
+            BOKA OSS NU
+          </Button>
+        </Link>
       </div>
     </div>
   );

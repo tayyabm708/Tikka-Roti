@@ -18,7 +18,7 @@ export default function Header() {
         </span>
         Roti */}
         <img
-          className="h-20 w-20 md:h-24 md:w-24 lg:h-32 lg:w-32 mx-auto mb-4"
+          className="h-20 w-20 md:h-24 md:w-24 lg:h-32 lg:w-32 mx-auto"
           src={TikkaRotiPNG}
           alt=""
         />
