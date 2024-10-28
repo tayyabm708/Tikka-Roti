@@ -8,10 +8,12 @@ import Menu from './pages/Menu'
 import Information from './pages/Information'
 import BookUs from './pages/BookUs'
 import CrispProvider from './components/CrispProvider'
+import ScrollToTop from './components/ScrollToTop'
 export default function App() {
   return (
     <div className='bg-[#fef3d8] min-h-screen'>
       <BrowserRouter>
+      <ScrollToTop />
       <Header />
       <CrispProvider />
       <Routes>

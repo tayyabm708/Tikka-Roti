@@ -1,15 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button, Card } from "flowbite-react";
-import TikkaRotiPNG from "../assets/TIKKA ROTI FOOD TRUCK/logo 1.png";
-import WB from "../assets/TIKKA ROTI FOOD TRUCK/WB logo.png";
+import TikkaRotiPNG from "../assets/TIKKA ROTI FOOD TRUCK/T5.png";
+import WB from "../assets/TIKKA ROTI FOOD TRUCK/WB.png";
+import Volvo from "../assets/TIKKA ROTI FOOD TRUCK/Volvo.png";
+import SFF from "../assets/TIKKA ROTI FOOD TRUCK/Streetfood festival.jpg";
+import Uni from "../assets/TIKKA ROTI FOOD TRUCK/Uni.png";
+import ViSom from "../assets/TIKKA ROTI FOOD TRUCK/ViSom.png";
+import KK from "../assets/TIKKA ROTI FOOD TRUCK/KK.png";
+import SRF from "../assets/TIKKA ROTI FOOD TRUCK/SRF.png";
+import GFF from "../assets/TIKKA ROTI FOOD TRUCK/GFF.png";
 
 export default function Home() {
   return (
     <div>
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center py-20 s text-black">
-        <img src={TikkaRotiPNG} alt="Tikka Roti Logo" className="h-32 mb-4" />
+        <img src={TikkaRotiPNG} alt="Tikka Roti Logo" className="h-44 w-44 mb-4" />
         <h1 className="text-5xl font-bold mb-2 text-center items-center">
           Hyr vår foodtruck{" "}
         </h1>
@@ -77,49 +84,51 @@ export default function Home() {
         <h2 className="text-3xl font-bold text-center mb-10">Våra Kunder</h2>
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {/* Replace the src with your logo paths */}
-            <img src={WB} alt="Client Logo 1" className="h-20 object-contain" />
+            <img 
+              src={WB} 
+              alt="Warner Bros" 
+              className="h-20 object-contain" 
+            />
+            <img 
+              src={Volvo} 
+              alt="Volvo Cars" 
+              className="h-20 object-contain" 
+            />
+            <img 
+              src={ViSom} 
+              alt="Vi Som" 
+              className="h-20 object-contain" 
+            />
+            <img 
+              src={KK} 
+              alt="KulturKalas" 
+              className="h-20 object-contain" 
+            />
             <img
-              src="/path/to/logo2.png"
-              alt="Client Logo 2"
+              src={SFF}
+              alt="Sweden Food Festival"
+              className="h-20 object-contain"
+            />
+             <img
+              src={SRF}
+              alt="Sweden Rock Festival"
               className="h-20 object-contain"
             />
             <img
-              src="/path/to/logo3.png"
-              alt="Client Logo 3"
+              src={GFF}
+              alt="Goteborg film festival"
               className="h-20 object-contain"
             />
-            <img
-              src="/path/to/logo4.png"
-              alt="Client Logo 4"
+             <img
+              src={Uni}
+              alt="Sahlgrenska Uni"
               className="h-20 object-contain"
             />
-            <img
-              src="/path/to/logo5.png"
-              alt="Client Logo 5"
-              className="h-20 object-contain"
-            />
-            <img
-              src="/path/to/logo6.png"
-              alt="Client Logo 6"
-              className="h-20 object-contain"
-            />
-            <img
-              src="/path/to/logo6.png"
-              alt="Client Logo 6"
-              className="h-20 object-contain"
-            />
-            <img
-              src="/path/to/logo6.png"
-              alt="Client Logo 6"
-              className="h-20 object-contain"
-            />
-            {/* Add more logos as needed */}
           </div>
         </div>
       </section>
 
-      <div className=" flex justify-center items-center mb-10">
+      <div className=" flex justify-center items-center my-8">
         <Link to="/info">
           <Button gradientDuoTone="pinkToOrange" className="mt-2">
             VARFÖR TIKKA ROTI?

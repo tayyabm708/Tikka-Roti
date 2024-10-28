@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { Alert, Button, Label, Textarea, TextInput } from "flowbite-react";
 import { Link } from "react-router-dom";
-import TikkaRotiPNG from "../assets/TIKKA ROTI FOOD TRUCK/logo 1.png";
+import TikkaRotiPNG from "../assets/TIKKA ROTI FOOD TRUCK/T5.png";
+import { BsInstagram, BsTiktok, BsFacebook } from "react-icons/bs";
+
 
 export default function BookUs() {
   const [formData, setformData] = useState({
@@ -10,7 +12,7 @@ export default function BookUs() {
     Email: "",
     "Phone Number": "",
     Address: "",
-    Menu: "",
+    Menu: [],
     "Minimum Guests": "",
     "Maximum Guests": "",
     "Allergies and Special Diets": "",
@@ -19,9 +21,32 @@ export default function BookUs() {
     "Extra Additions": "",
     "Additional Information": "",
   });
+  // console.log(formData);
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
+  const [showMenuOptions, setShowMenuOptions] = useState(false);
+
+  const menuOptions = [
+    "Burgers",
+    "Grekisk Streetfood",
+    "Indisk/Pakistani",
+    "Mexikansk Streetfood",
+    "Asiatisk Streetfood",
+  ];
+
+  const toggleMenuOptions = () => {
+    setShowMenuOptions((prev) => !prev);
+  };
+
+  const handleMenuSelect = (option) => {
+    setformData((prev) => {
+      const newMenu = prev["Menu"].includes(option)
+        ? prev["Menu"].filter((item) => item !== option) // Remove if already selected
+        : [...prev["Menu"], option]; // Add if not selected
+      return { ...prev, Menu: newMenu };
+    });
+  };
 
   const handleChange = (e) => {
     setformData({ ...formData, [e.target.id]: e.target.value });
@@ -29,6 +54,10 @@ export default function BookUs() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // Reset messages on new submission
+    setErrorMessage("");
+    setSuccessMessage("");
 
     try {
       setLoading(true);
@@ -39,15 +68,13 @@ export default function BookUs() {
         },
         body: JSON.stringify(formData),
       });
+
       if (!response.ok) {
-        setErrorMessage("Something went wrong, please try again later.");
-        setLoading(false);
-        setErrorMessage("");
-        return;
+        throw new Error("Something went wrong, please try again later.");
       }
-      setLoading(false);
+
       setSuccessMessage(
-        "Your booking has been submitted successfully. We will get back to you soon"
+        "Your booking has been submitted successfully. We will get back to you soon."
       );
       setformData({
         "First Name": "",
@@ -55,7 +82,7 @@ export default function BookUs() {
         Email: "",
         "Phone Number": "",
         Address: "",
-        Menu: "",
+        Menu: [],
         "Minimum Guests": "",
         "Maximum Guests": "",
         "Allergies and Special Diets": "",
@@ -64,32 +91,27 @@ export default function BookUs() {
         "Extra Additions": "",
         "Additional Information": "",
       });
-      setSuccessMessage("");
     } catch (error) {
-      setLoading(false);
-      setErrorMessage("Something went wrong, please try again later.");
+      setErrorMessage(error.message);
+    } finally {
+      setLoading(false); // Stop loading regardless of success or error
     }
   };
 
   return (
     <div className="min-h-screen mt-20">
-      <p className="text-center text-3xl font-bold pb-4">BOKA OSS</p>
-      <div className="flex p-3 max-w-3xl mx-auto flex-col md:flex-row md:items-center gap-5">
-        {/* Left Section */}
-        <div className="flex-1">
+      <p className="text-center text-3xl font-bold pb-4 mb-4">BOKA OSS</p>
+      <div className="flex p-3 max-w-3xl mx-auto flex-col md:flex-row md:items-center gap-12">
+        {/*Left Section*/}
+        <div className="flex-1 ml-5 justify-center">
           {/* Contact Information */}
-          <div className="mt-5">
-            {/* Google Maps Embed */}
-            <iframe
-              className="mb-4"
-              title="Google Maps Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d272887.75788486586!2d11.564208266019989!3d57.70056378561675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464f8e67966c073f%3A0x4019078290e7c40!2sGothenburg%2C%20Sweden!5e0!3m2!1sen!2s!4v1729839134044!5m2!1sen!2s"
-              width="100%"
-              height="300"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-            ></iframe>
+          <div className="mt-5  flex flex-col justify-center items-center">
+            {/* Tikka Roti Logo */}
+            <img
+              src={TikkaRotiPNG}
+              alt="Tikka Roti"
+              className="h-32 w-32 md:h-40 md:w-40 lg:h-44 lg:w-44 mb-2"
+            />
 
             {/* Additional Contact Info */}
             <p className="text-md text-gray-600 dark:text-gray-400 mt-2">
@@ -100,39 +122,27 @@ export default function BookUs() {
             </p>
 
             {/* Social Media Links */}
-            <div className="mt-4 flex space-x-4">
+            <div className="mt-4 flex space-x-5 ">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/share/m3HRVk45wzmvQisQ/?mibextid=LQQJ4d"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
-                  src="https://img.icons8.com/fluency/48/facebook.png"
-                  alt="Facebook"
-                  className="w-6 h-6"
-                />
+                <BsFacebook className="h-6 w-6 hover:text-gray-600" />
               </a>
-              <a
-                href="https://instagram.com"
+              <aq
+                href="https://www.instagram.com/tikkaroti?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
-                  src="https://img.icons8.com/fluency/48/instagram-new.png"
-                  alt="Instagram"
-                  className="w-6 h-6"
-                />
-              </a>
+                <BsInstagram className="h-6 w-6  hover:text-gray-600" />
+              </aq>
               <a
-                href="https://twitter.com"
+                href="https://www.tiktok.com/@tikkarotifoodtruck?_t=8qJYAo5WWfN&_r=1"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
-                  src="https://img.icons8.com/fluency/48/tiktok.png"
-                  alt="Twitter"
-                  className="w-6 h-6"
-                />
+                <BsTiktok className="h-6 w-6  hover:text-gray-600" />
               </a>
             </div>
           </div>
@@ -196,16 +206,35 @@ export default function BookUs() {
                 required
               />
             </div>
+
             <div>
               <Label value="Menu" />
-              <Textarea
-                placeholder="e.g., Tandoori Chicken Rulle, Chicken Tikka Rulle"
-                id="Menu"
-                value={formData["Menu"]}
-                onChange={handleChange}
-                required
+              <TextInput
+                type="text"
+                placeholder="Select Menu Items"
+                value={formData["Menu"].join(", ")}
+                onClick={toggleMenuOptions}
+                readOnly
               />
+              {showMenuOptions && (
+                <div className="mt-2 bg-white shadow-md rounded-lg p-3 border">
+                  {menuOptions.map((option) => (
+                    <div
+                      key={option}
+                      onClick={() => handleMenuSelect(option)}
+                      className={`p-2 cursor-pointer rounded-md ${
+                        formData["Menu"].includes(option)
+                          ? "bg-orange-400 text-black "
+                          : "hover:bg-blue-100"
+                      }`}
+                    >
+                      {option}
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
+
             <div>
               <Label value="Minimum Number" />
               <TextInput
@@ -214,6 +243,7 @@ export default function BookUs() {
                 id="Minimum Guests"
                 value={formData["Minimum Guests"]}
                 onChange={handleChange}
+                min={0}
                 required
               />
             </div>
@@ -244,6 +274,7 @@ export default function BookUs() {
                 id="Booking Date"
                 value={formData["Booking Date"]}
                 onChange={handleChange}
+                className="mb-1"
                 required
               />
               <TextInput

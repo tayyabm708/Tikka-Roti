@@ -2,7 +2,7 @@ import { Footer } from "flowbite-react";
 import React from "react";
 import { Link } from "react-router-dom";
 import { BsInstagram, BsTwitter, BsTiktok, BsFacebook } from "react-icons/bs";
-import TikkaRotiPNG from "../assets/TIKKA ROTI FOOD TRUCK/logo 1.png";
+import TikkaRotiPNG from "../assets/TIKKA ROTI FOOD TRUCK/T5.png";
 
 export default function FooterCom() {
   return (
@@ -30,24 +30,20 @@ export default function FooterCom() {
           </div>
           <div className="grid grid-cols-2 gap-8 mt-4 sm:grid-cols-3 sm:gap-6">
             <div>
-              <Footer.Title className="text-black" title="Follow us" />
+              <Footer.Title className="text-black" title="Quick Links" />
               <Footer.LinkGroup col>
-                <Footer.Link
-                  className="text-black"
-                  href="https://www.github.com/tayyabm708"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Github
-                </Footer.Link>
-                <Footer.Link
-                  className="text-black"
-                  href="https://www.linkedin.com/in/muhammad-tayyab708"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  LinkedIn
-                </Footer.Link>
+                <Link to="/">
+                  <Footer.Link className="text-black">Hem</Footer.Link>
+                </Link>
+                <Link to="/menu">
+                  <Footer.Link className="text-black">Meny</Footer.Link>
+                </Link>
+                <Link to="/info">
+                  <Footer.Link className="text-black">About Us</Footer.Link>
+                </Link>
+                <Link to="/book">
+                  <Footer.Link className="text-black">Boka oss</Footer.Link>
+                </Link>
               </Footer.LinkGroup>
             </div>
             <div>
@@ -71,31 +67,36 @@ export default function FooterCom() {
             by="TikkaRoti"
             year={new Date().getFullYear()}
           />
-          <div className="items-center text-center">
+          <div className="my-2">
             <p>
               Developed and Managed By
-              <Link to="https://portfolio-webapplication-mern-264128a12e42.herokuapp.com/">
-                <span className="text-teal-600"> MMT</span>
+              <Link to="https://portfolio-webapplication-mern-264128a12e42.herokuapp.com/" target="_blank" rel="nonopener npreferrer">
+                <span className="text-teal-600 hover:text-blue-700"> MMT</span>
               </Link>
             </p>
           </div>
           <div className="flex gap-6 sm:mt-0 mt-4 sm:justify-center">
             <Footer.Icon
-              className="text-black"
+              className="text-black hover:text-gray-600"
               href="https://www.facebook.com/share/m3HRVk45wzmvQisQ/?mibextid=LQQJ4d"
+              target="_blank"
+              rel="noopener noreferrer"
               icon={BsFacebook}
             />
             <Footer.Icon
-              className="text-black"
+              className="text-black hover:text-gray-600"
               href="https://www.instagram.com/tikkaroti?igsh=YmQxYmVqcjFwczc0"
+              target="_blank"
+              rel="noopener noreferrer"
               icon={BsInstagram}
             />
             <Footer.Icon
-              className="text-black"
+              className="text-black hover:text-gray-600"
               href="https://www.tiktok.com/@tikkarotifoodtruck?_t=8qJYAo5WWfN&_r=1"
+              target="_blank"
+              rel="noopener noreferrer"
               icon={BsTiktok}
             />
-            {/* <Footer.Icon href="#" icon={BsTwitter} /> */}
           </div>
         </div>
       </div>
