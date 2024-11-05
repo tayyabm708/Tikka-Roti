@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button, Card } from "flowbite-react";
+import Carousel from "../components/Carousel";
 import TikkaRotiPNG from "../assets/TIKKA ROTI FOOD TRUCK/T5.png";
 import WB from "../assets/TIKKA ROTI FOOD TRUCK/WB.png";
 import Volvo from "../assets/TIKKA ROTI FOOD TRUCK/Volvo.png";
@@ -10,13 +11,16 @@ import ViSom from "../assets/TIKKA ROTI FOOD TRUCK/ViSom.png";
 import KK from "../assets/TIKKA ROTI FOOD TRUCK/KK.png";
 import SRF from "../assets/TIKKA ROTI FOOD TRUCK/SRF.png";
 import GFF from "../assets/TIKKA ROTI FOOD TRUCK/GFF.png";
+import FoodTruck1 from "../assets/TIKKA ROTI FOOD TRUCK/2.jpg";
+import FoodTruck2 from "../assets/TIKKA ROTI FOOD TRUCK/3.jpg";
+import FoodTruck3 from "../assets/TIKKA ROTI FOOD TRUCK/4.jpg";
 
 export default function Home() {
   return (
     <div>
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center py-20 s text-black">
-        <img src={TikkaRotiPNG} alt="Tikka Roti Logo" className="h-44 w-44 mb-4" />
+        <img src={TikkaRotiPNG} alt="Tikka Roti Logo" className="h-80 w-80 mb-4" />
         <h1 className="text-5xl font-bold mb-2 text-center items-center">
           Hyr vår foodtruck{" "}
         </h1>
@@ -28,6 +32,14 @@ export default function Home() {
             BOKA OSS
           </Button>
         </Link>
+      </section>
+
+      {/* Carousel Section */}
+      <section className="py-10 ">
+        <h2 className="text-3xl font-bold text-center mb-6">Vår Food Truck</h2>
+        <div className="mx-auto">
+          <Carousel />
+        </div>
       </section>
 
       {/* Services Section */}
@@ -83,7 +95,7 @@ export default function Home() {
       <section className="py-10 ">
         <h2 className="text-3xl font-bold text-center mb-10">Våra Kunder</h2>
         <div className="max-w-6xl mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-14">
             <img 
               src={WB} 
               alt="Warner Bros" 

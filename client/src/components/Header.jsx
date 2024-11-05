@@ -43,13 +43,13 @@ export default function Header() {
         >
           <BsFacebook className="h-6 w-6 hover:text-gray-600 " />
         </a>
-        <aq
+        <a
           href="https://www.instagram.com/tikkaroti?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
           target="_blank"
           rel="noopener noreferrer"
         >
           <BsInstagram className="h-6 w-6  hover:text-gray-600" />
-        </aq>
+        </a>
         <a
           href="https://www.tiktok.com/@tikkarotifoodtruck?_t=8qJYAo5WWfN&_r=1"
           target="_blank"

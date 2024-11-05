@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import TikkaRotiPNG from "../assets/TIKKA ROTI FOOD TRUCK/T5.png";
 import { BsInstagram, BsTiktok, BsFacebook } from "react-icons/bs";
 
-
 export default function BookUs() {
   const [formData, setformData] = useState({
     "First Name": "",
@@ -130,13 +129,13 @@ export default function BookUs() {
               >
                 <BsFacebook className="h-6 w-6 hover:text-gray-600" />
               </a>
-              <aq
+              <a
                 href="https://www.instagram.com/tikkaroti?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <BsInstagram className="h-6 w-6  hover:text-gray-600" />
-              </aq>
+              </a>
               <a
                 href="https://www.tiktok.com/@tikkarotifoodtruck?_t=8qJYAo5WWfN&_r=1"
                 target="_blank"
@@ -152,7 +151,9 @@ export default function BookUs() {
         <div className="flex-1">
           <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
             <div>
-              <Label value="First Name" />
+              <Label
+                value="Förnamn"
+              />
               <TextInput
                 type="text"
                 placeholder="John"
@@ -163,7 +164,7 @@ export default function BookUs() {
               />
             </div>
             <div>
-              <Label value="Last Name" />
+              <Label value="Efternamn" />
               <TextInput
                 type="text"
                 placeholder="Doe"
@@ -174,7 +175,7 @@ export default function BookUs() {
               />
             </div>
             <div>
-              <Label value="Your email" />
+              <Label value="Din e-post" />
               <TextInput
                 type="email"
                 placeholder="name@company.com"
@@ -185,7 +186,7 @@ export default function BookUs() {
               />
             </div>
             <div>
-              <Label value="Phone Number" />
+              <Label value="Telefonnummer" />
               <TextInput
                 type="tel"
                 placeholder="+46782591288"
@@ -196,10 +197,10 @@ export default function BookUs() {
               />
             </div>
             <div>
-              <Label value="Address" />
+              <Label value="Adress" />
               <TextInput
                 type="text"
-                placeholder="Enter your booking address here"
+                placeholder="Ange din bokningsadress här"
                 id="Address"
                 value={formData["Address"]}
                 onChange={handleChange}
@@ -208,13 +209,14 @@ export default function BookUs() {
             </div>
 
             <div>
-              <Label value="Menu" />
+              <Label value="Meny" />
               <TextInput
                 type="text"
-                placeholder="Select Menu Items"
+                placeholder="Välj menyalternativ"
                 value={formData["Menu"].join(", ")}
                 onClick={toggleMenuOptions}
                 readOnly
+                required
               />
               {showMenuOptions && (
                 <div className="mt-2 bg-white shadow-md rounded-lg p-3 border">
@@ -236,10 +238,10 @@ export default function BookUs() {
             </div>
 
             <div>
-              <Label value="Minimum Number" />
+              <Label value="Minsta antal" />
               <TextInput
                 type="number"
-                placeholder="Enter minimum number of guests"
+                placeholder="Ange minsta antal gäster"
                 id="Minimum Guests"
                 value={formData["Minimum Guests"]}
                 onChange={handleChange}
@@ -248,27 +250,28 @@ export default function BookUs() {
               />
             </div>
             <div>
-              <Label value="Maximum Number" />
+              <Label value="Maximalt antal" />
               <TextInput
                 type="number"
-                placeholder="Enter maximum number of guests"
+                placeholder="Ange maximalt antal gäster"
                 id="Maximum Guests"
                 value={formData["Maximum Guests"]}
                 onChange={handleChange}
+                min={0}
                 required
               />
             </div>
             <div>
-              <Label value="Allergies and Special Diets" />
+              <Label value="Allergier och specialkost" />
               <Textarea
-                placeholder="If any allergies/special diet, please specify"
+                placeholder="Om några allergier/specialkost, vänligen specificera"
                 id="Allergies and Special Diets"
                 value={formData["Allergies and Special Diets"]}
                 onChange={handleChange}
               />
             </div>
             <div>
-              <Label value="Booking Date and Time" />
+              <Label value="Bokningsdatum och tid" />
               <TextInput
                 type="date"
                 id="Booking Date"
@@ -286,18 +289,18 @@ export default function BookUs() {
               />
             </div>
             <div>
-              <Label value="Extra additions" />
+              <Label value="Extra tillägg" />
               <Textarea
-                placeholder="e.g., hostess, decoration, DJ, FT, platters, tablecloths, lanterns, serving staff"
+                placeholder="t.ex. värdinna, dekoration, DJ, FT, fat, dukar, lyktor, serveringspersonal"
                 id="Extra Additions"
                 value={formData["Extra Additions"]}
                 onChange={handleChange}
               />
             </div>
             <div>
-              <Label value="Additional Information" />
+              <Label value="Ytterligare information" />
               <Textarea
-                placeholder="Tell us more about your event"
+                placeholder="Berätta mer om ditt event"
                 id="Additional Information"
                 value={formData["Additional Information"]}
                 onChange={handleChange}

@@ -1,6 +1,8 @@
 import React from "react";
 import { Card, Button } from "flowbite-react";
 import { Link } from "react-router-dom";
+import Certificate from "../assets/TIKKA ROTI FOOD TRUCK/Certificate.jpg";
+import Catering from "../assets/TIKKA ROTI FOOD TRUCK/12.jpg";
 
 export default function Information() {
   return (
@@ -8,6 +10,8 @@ export default function Information() {
       <h2 className="text-4xl font-bold text-center mb-6 text-gray-800">
         VARFÖR TIKKA ROTI?
       </h2>
+
+      
       <p className="text-lg text-center mb-4 text-gray-600">
         Planerar du för födelsedag, företag, bröllop eller någon annan typ av
         sammankomst? Låt oss göra ditt evenemang minnesvärt med vår autentiska
@@ -46,7 +50,7 @@ export default function Information() {
         </Card>
       </div>
 
-      <Card className="shadow-md hover:shadow-xl transition-shadow duration-300 p-5 bg-white border rounded-lg">
+      <Card className="shadow-md hover:shadow-xl transition-shadow duration-300 p-5 bg-white border rounded-lg mb-10">
         <h3 className="text-xl font-semibold mb-2 text-gray-800">
           Tikka Roti: Din Smakupplevelse på Hjul
         </h3>
@@ -63,6 +67,17 @@ export default function Information() {
           färgstarka rätter och enastående service.
         </p>
       </Card>
+
+      {/* <Card className="shadow-md hover:shadow-xl transition-shadow duration-300 p-5  border rounded-lg items-center"> */}
+      <div className="flex flex-col justify-center items-center">
+        <img
+          src={Certificate}
+          alt="certificate"
+          className=" h-100 w-80"
+        />
+      </div>
+
+      {/* </Card> */}
 
       {/* Call to Action Section */}
       <div className="mt-10 text-center flex flex-col items-center justify-center">

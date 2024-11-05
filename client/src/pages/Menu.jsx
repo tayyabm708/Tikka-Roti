@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 export default function Menu() {
   return (
     <div className="flex flex-col items-center p-6 bg-orange-50 min-h-screen">
-      <h1 className="text-4xl font-bold text-orange-600 mb-8">Our Menu</h1>
+      <h1 className="text-4xl font-bold  mb-8">Vår Meny</h1>
 
       {/* Burgers Section */}
       <Card className="w-full max-w-6xl mb-6">
