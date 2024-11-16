@@ -14,7 +14,7 @@ export default function Menu() {
       {/* Burgers Section */}
       <Card className="w-full max-w-6xl mb-6">
         <h2 className="text-2xl font-semibold text-orange-500 border-b-2 pb-2 mb-4">
-          Burgers
+          Street Burgers
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {/* Smash Burger */}
@@ -27,11 +27,11 @@ export default function Menu() {
               />
             </div>
             <div className="text-center">
-              <p className="font-semibold">Smash Burger</p>
+              <p className="font-semibold">Smash Burger (NEXT LEVEL)</p>
               <p className="text-gray-600">
-                Saftig, kryddad nötköttspatty pressad till perfektion och
-                serverad i en mjuk bulle med färska pålägg och en speciell sås
-                för en oförglömlig smakupplevelse.
+                Smashed nötfärs (2*100g), cheddarost, grillad jalapeños,
+                guacamole, tortillachips, krispsallad & lätt rostat brioche
+                bröd,,serverad med 9mm mcCain pommes frites.
               </p>
             </div>
           </div>
@@ -48,15 +48,14 @@ export default function Menu() {
             <div className="text-center">
               <p className="font-semibold">Smokey Barbeque Burger</p>
               <p className="text-gray-600">
-                En rökig och saftig nötköttspatty, grillad till perfektion och
-                toppad med karamelliserad lök, smält ost och vår speciella
-                BBQ-sås. Serveras i en mjuk bulle för den ultimata
-                grillupplevelsen.
+                saftig nötbiff(2*100g), toppad med smält cheddarost, rökig
+                barbecuesås, krispsallad, picklade rödlök & lätt rostad brioche
+                bröd,,serverad med 9mm mcCain pommes frites.
               </p>
             </div>
           </div>
 
-          {/* Jalapeno Burger */}
+          {/* American Burger */}
           <div className="flex flex-col items-center">
             <div className="flex justify-center mb-4">
               <img
@@ -66,16 +65,16 @@ export default function Menu() {
               />
             </div>
             <div className="text-center">
-              <p className="font-semibold">Jalapeno Burger</p>
+              <p className="font-semibold">American Burger</p>
               <p className="text-gray-600">
-                En het och kryddig hamburgare fylld med eldiga jalapeños, smält
-                ost och en saftig köttpatty. Perfekt för den som gillar lite
-                extra sting i varje tugga!
+                200 gram högrev, cheddarost, BBQ sås, krispsallad, karamalised
+                lök, nice sliced tomater, lätt rostat brioche bröd,,serverad med
+                9mm mcCain pommes frites.
               </p>
             </div>
           </div>
 
-          {/* Truffle Burger */}
+          {/* Mexican Burger */}
           <div className="flex flex-col items-center">
             <div className="flex justify-center mb-4">
               <img
@@ -85,11 +84,11 @@ export default function Menu() {
               />
             </div>
             <div className="text-center">
-              <p className="font-semibold">Truffle Burger</p>
+              <p className="font-semibold">Mexican Burger</p>
               <p className="text-gray-600">
-                En lyxig hamburgare med en rik smak av tryffel, smält ost och
-                saftig köttpatty. En perfekt kombination av elegans och smak som
-                tar din burgarupplevelse till en ny nivå!
+                2*100 gram nötfärs , 2 *cheddarost, chipotledressing, picklade
+                rödlök, krispsallad, nachochips, lätt rostat brioche
+                bröd,,serverad med 9mm mcCain pommes frites.
               </p>
             </div>
           </div>
@@ -106,28 +105,9 @@ export default function Menu() {
             <div className="text-center">
               <p className="font-semibold">Halloumi Burger</p>
               <p className="text-gray-600">
-                En krispig och gyllenstekt halloumiburgare med en saftig inre,
-                toppad med färska grönsaker och smakrik sås. Perfekt för alla
-                som älskar en vegetariskt burgare full av smak!
-              </p>
-            </div>
-          </div>
-
-          {/* Chipotle Burger */}
-          <div className="flex flex-col items-center">
-            <div className="flex justify-center mb-4">
-              <img
-                src={SamosaTallrik}
-                alt="Vegetable Samosa"
-                className="w-60 h-60 object-cover rounded"
-              />
-            </div>
-            <div className="text-center">
-              <p className="font-semibold">Chipotle Burger</p>
-              <p className="text-gray-600">
-                En saftig burgare med en rökig och kryddig chipotlesås, toppad
-                med krispiga salladsblad och smält ost. En smakexplosion med en
-                härlig hetta för den som älskar lite extra sting i sin måltid!
+                Grillad halloumi, original dressing, krispsallad, picklad
+                rödlök, srirachasås & lätt rostad brioche bröd,,serverad med 9mm
+                mcCain pommes frites.
               </p>
             </div>
           </div>
@@ -140,7 +120,7 @@ export default function Menu() {
           Grekisk Streetfood
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          {/* Pita Gyros */}
+          {/* Gyros i pitabröd */}
           <div className="flex flex-col items-center">
             <div className="flex justify-center mb-4">
               <img
@@ -150,11 +130,11 @@ export default function Menu() {
               />
             </div>
             <div className="text-center">
-              <p className="font-semibold">Pita Gyros</p>
+              <p className="font-semibold">Gyros i pitabröd</p>
               <p className="text-gray-600">
-                En smakrik pita med saftigt grillat kött, fräscha grönsaker och
-                krämig tzatziki. Perfekt för en snabb och mättande måltid! Njut
-                av en autentisk grekisk smakupplevelse i varje tugga!
+                Grillad kyckling gyros (olivolja, torkade oregano, citronjuice,
+                vitlök) serveras i pitabröd med rödlök, tomat och isbergssallad,
+                Tzatziki och pommes frites.
               </p>
             </div>
           </div>
@@ -171,9 +151,9 @@ export default function Menu() {
             <div className="text-center">
               <p className="font-semibold">Souvlaki Chicken</p>
               <p className="text-gray-600">
-                Saftiga bitar av grillad kyckling marinerad i aromatiska
-                kryddor, serverade på spett. Perfekt för en snabb och smakrik
-                måltid! Njut av en härlig grekisk upplevelse i varje tugga!
+                Grillad kyckling spett marinerade ( olivolja, citronjuice,
+                rosmarin, oregano, sött chilisås) serveras med pommes frites,
+                pitabröd, grekisk sallad och tzatziki.
               </p>
             </div>
           </div>
@@ -190,9 +170,8 @@ export default function Menu() {
             <div className="text-center">
               <p className="font-semibold"> Soutzokakia</p>
               <p className="text-gray-600">
-                Kryddiga köttbullar i en smakrik tomatsås, perfekt tillagad för
-                en djup och mustig smak. Idealisk för en mättande middag! Upplev
-                en autentisk grekisk klassiker med varje tugga!
+                Ugnsbakade biffar (lamm och nötfärs) serveras med pitabröd,
+                pommes frites, grekisk sallad och tzatziki.
               </p>
             </div>
           </div>
@@ -207,11 +186,10 @@ export default function Menu() {
               />
             </div>
             <div className="text-center">
-              <p className="font-semibold">Pita Halloumi</p>
+              <p className="font-semibold">Frasig halloumi i pitabröd</p>
               <p className="text-gray-600">
-                Grillad halloumi inlindad i mjuk pita, fylld med fräscha
-                grönsaker och en läcker sås. Perfekt för en vegetarisk måltid!
-                Njut av en smakrik och härlig grekisk upplevelse!
+                Marinerad och stekt halloumi i panko serveras med pitabröd,
+                grekisk sallad, pommes och tzatziki.
               </p>
             </div>
           </div>
@@ -228,9 +206,190 @@ export default function Menu() {
             <div className="text-center">
               <p className="font-semibold">Gyros Tallrik</p>
               <p className="text-gray-600">
-                Saftigt gyroskött serverat på en generös tallrik med krispiga
-                grönsaker, tzatziki och pitabröd. Perfekt för en mättande
-                måltid! Få en autentisk smak av Grekland i varje tugga!
+                Grillad kyckling gyros (olivolja, torkade oregano, citronjuice,
+                vitlök) serveras med pommes frites, pitabröd rödlök, grekisk
+                sallad och Tzatziki.
+              </p>
+            </div>
+          </div>
+        </div>
+      </Card>
+
+      {/* Mexikansk Streetfood Section */}
+      <Card className="w-full max-w-6xl mb-6">
+        <h2 className="text-2xl font-semibold text-orange-500 border-b-2 pb-2 mb-4">
+          Mexikansk Streetfood
+        </h2>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          {/* Tacos Burger */}
+          <div className="flex flex-col items-center">
+            <div className="flex justify-center mb-4">
+              <img
+                src="https://example.com/gulab-jamun.jpg"
+                alt="Gulab Jamun"
+                className="w-60 h-60 object-cover rounded"
+              />
+            </div>
+            <div className="text-center">
+              <p className="font-semibold">Tacos Burger (NEXT LEVEL)</p>
+              <p className="text-gray-600">
+                Smashed nötfärs, cheddarost, grillad jalapeños, BBQ sås,
+                tortillachips, krispsallad & lätt rostat tortillabröd.
+              </p>
+            </div>
+          </div>
+
+          {/* Enchilada Pollo */}
+          <div className="flex flex-col items-center">
+            <div className="flex justify-center mb-4">
+              <img
+                src="https://example.com/kheer.jpg"
+                alt="Kheer"
+                className="w-60 h-60 object-cover rounded"
+              />
+            </div>
+            <div className="text-center">
+              <p className="font-semibold">Enchilada Pollo</p>
+              <p className="text-gray-600">
+                Smörstekt kyckling serveras i majs tortillabröd med tacosås,
+                majs och avokadosallad ( rödlök, limeskal, limesaft, jalapeños,
+                koriander).
+              </p>
+            </div>
+          </div>
+
+          {/* Quesadilla Chicken Tacos */}
+          <div className="flex flex-col items-center">
+            <div className="flex justify-center mb-4">
+              <img
+                src="https://example.com/kheer.jpg"
+                alt="Kheer"
+                className="w-60 h-60 object-cover rounded"
+              />
+            </div>
+            <div className="text-center">
+              <p className="font-semibold">Quesadilla Kyckling </p>
+              <p className="text-gray-600">
+                Smörstekt kyckling serveras i majs tortillabröd med guacamole,
+                ost, rödlök, paprika, koriander och limesaft.
+              </p>
+            </div>
+          </div>
+
+          {/* Tacos special (Nötfärs) */}
+          <div className="flex flex-col items-center">
+            <div className="flex justify-center mb-4">
+              <img
+                src="https://example.com/kheer.jpg"
+                alt="Kheer"
+                className="w-60 h-60 object-cover rounded"
+              />
+            </div>
+            <div className="text-center">
+              <p className="font-semibold">Tacos special (Nötfärs)</p>
+              <p className="text-gray-600">
+                Stekt nötfärs serveras i tortillabröd serveras med majs, rödlök,
+                tomater, limesaft, paprika, chilipeppar, tacos salsa och nachos
+                chips.
+              </p>
+            </div>
+          </div>
+
+          {/* Fajitas */}
+          <div className="flex flex-col items-center">
+            <div className="flex justify-center mb-4">
+              <img
+                src="https://example.com/kheer.jpg"
+                alt="Kheer"
+                className="w-60 h-60 object-cover rounded"
+              />
+            </div>
+            <div className="text-center">
+              <p className="font-semibold">Fajitas </p>
+              <p className="text-gray-600">
+                Grillad kyckling i tortillabröd serveras med stekta grönsaker,
+                guacamole, koriander och limesaft.
+              </p>
+            </div>
+          </div>
+
+          {/* Veggie Tacos */}
+          <div className="flex flex-col items-center">
+            <div className="flex justify-center mb-4">
+              <img
+                src="https://example.com/kheer.jpg"
+                alt="Kheer"
+                className="w-60 h-60 object-cover rounded"
+              />
+            </div>
+            <div className="text-center">
+              <p className="font-semibold">Veggie Tacos</p>
+              <p className="text-gray-600">
+                Röda kidneybönor, picklade rödlök, tomat, avokado, koriander,
+                jalapeños, limesaft, chilipeppar och feta ost.
+              </p>
+            </div>
+          </div>
+        </div>
+      </Card>
+
+      {/* Asiatisk Streetfood Section */}
+      <Card className="w-full max-w-6xl mb-6">
+        <h2 className="text-2xl font-semibold text-orange-500 border-b-2 pb-2 mb-4">
+          Asiatisk Streetfood
+        </h2>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          {/* Yakisoba Nudlar */}
+          <div className="flex flex-col items-center">
+            <div className="flex justify-center mb-4">
+              <img
+                src="https://example.com/gulab-jamun.jpg"
+                alt="Gulab Jamun"
+                className="w-60 h-60 object-cover rounded"
+              />
+            </div>
+            <div className="text-center">
+              <p className="font-semibold">Yakisoba Nudlar</p>
+              <p className="text-gray-600">
+                Mör kyckling blandat med risnudlar samt färgglada grönsaker
+                (paprika, morot, vårlök) sojasås, sesamolja.
+              </p>
+            </div>
+          </div>
+
+          {/* Kyckling Bao Buns*/}
+          <div className="flex flex-col items-center">
+            <div className="flex justify-center mb-4">
+              <img
+                src="https://example.com/kheer.jpg"
+                alt="Kheer"
+                className="w-60 h-60 object-cover rounded"
+              />
+            </div>
+            <div className="text-center">
+              <p className="font-semibold">Kyckling Bao Buns</p>
+              <p className="text-gray-600">
+                Grillad kyckling file serveras med picklade rödlök,
+                gochujangpasta ( chilimajonäs), röstad sesamfrö, rödkål och
+                tomat.
+              </p>
+            </div>
+          </div>
+
+          {/* Grilloumi Bao Buns */}
+          <div className="flex flex-col items-center">
+            <div className="flex justify-center mb-4">
+              <img
+                src="https://example.com/kheer.jpg"
+                alt="Kheer"
+                className="w-60 h-60 object-cover rounded"
+              />
+            </div>
+            <div className="text-center">
+              <p className="font-semibold">Grilloumi Bao Buns</p>
+              <p className="text-gray-600">
+                Grillad grönsaker ( paprika, aubergine, champinjoner), tomat,
+                röstad lök med gochujangpasta (chilimajonäs).
               </p>
             </div>
           </div>
@@ -243,8 +402,8 @@ export default function Menu() {
           Indisk/Pakistani
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          {/* Chicken Tikka Rulle */}
-          <div className="flex flex-col items-center">
+          {/*Chicken Tikka Rulle */}
+          {/* <div className="flex flex-col items-center">
             <div className="flex justify-center mb-4">
               <img
                 src="https://example.com/gulab-jamun.jpg"
@@ -260,10 +419,10 @@ export default function Menu() {
                 måltid! Njut av en explosiv smakupplevelse i varje tugga!
               </p>
             </div>
-          </div>
+          </div> */}
 
           {/* Chicken Tandoori Rulle */}
-          <div className="flex flex-col items-center">
+          {/* <div className="flex flex-col items-center">
             <div className="flex justify-center mb-4">
               <img
                 src="https://example.com/kheer.jpg"
@@ -280,10 +439,10 @@ export default function Menu() {
                 smakupplevelse i varje tugga!
               </p>
             </div>
-          </div>
+          </div> */}
 
           {/* Pakora Vegetarisk Rulle */}
-          <div className="flex flex-col items-center">
+          {/* <div className="flex flex-col items-center">
             <div className="flex justify-center mb-4">
               <img
                 src="https://example.com/kheer.jpg"
@@ -300,10 +459,10 @@ export default function Menu() {
                 i varje tugga!
               </p>
             </div>
-          </div>
+          </div> */}
 
           {/* Pakora Vegan Rulle */}
-          <div className="flex flex-col items-center">
+          {/* <div className="flex flex-col items-center">
             <div className="flex justify-center mb-4">
               <img
                 src="https://example.com/kheer.jpg"
@@ -320,7 +479,7 @@ export default function Menu() {
                 vegansk smakupplevelse i varje tugga!
               </p>
             </div>
-          </div>
+          </div> */}
 
           {/* Chicken Tikka Tallrik */}
           <div className="flex flex-col items-center">
@@ -332,11 +491,10 @@ export default function Menu() {
               />
             </div>
             <div className="text-center">
-              <p className="font-semibold">Chicken Tikka Tallrik</p>
+              <p className="font-semibold">Chicken Tikka Tallrik (MILD)</p>
               <p className="text-gray-600">
-                Mör kyckling marinerad i aromatiska tikka-kryddor, serverad med
-                krispiga grönsaker, ris och sås. Perfekt för en mättande måltid!
-                Få en autentisk smak av Indien i varje tugga!
+                Grillad kycklingfilé med pommes frites, bröd, isbergssallad,
+                rödlök, tomat & myntayoghurtsås.
               </p>
             </div>
           </div>
@@ -351,11 +509,12 @@ export default function Menu() {
               />
             </div>
             <div className="text-center">
-              <p className="font-semibold">Chicken Tandoori Tallrik</p>
+              <p className="font-semibold">
+                Chicken Tandoori Tallrik (KRYDDSTARK)
+              </p>
               <p className="text-gray-600">
-                Saftig tandoori-marinerad kyckling, serverad med färska
-                grönsaker, ris och en smakrik sås. Perfekt för en mättande
-                måltid! Njut av en autentisk indisk upplevelse i varje tugga!
+                Grillad kycklingfilé med pommes frites, bröd, isbergssallad,
+                rödlök, tomat & myntayoghurtsås.
               </p>
             </div>
           </div>
@@ -370,262 +529,13 @@ export default function Menu() {
               />
             </div>
             <div className="text-center">
-              <p className="font-semibold">Pakora Gluten free Tallrik</p>
-              <p className="text-gray-600">
-                Krispiga pakoras gjorda på färska grönsaker, serverade med en
-                fräsch sallad och smakrik sås. Perfekt för en lätt och mättande
-                måltid! Njut av en härlig smakupplevelse utan gluten i varje
-                tugga!
+              <p className="font-semibold">
+                Pakora Tallrik (Glutenfri/Vegetarisk/Veganskt alternativ)
               </p>
-            </div>
-          </div>
-        </div>
-      </Card>
-
-      {/* Mexikansk Streetfood Section */}
-      <Card className="w-full max-w-6xl mb-6">
-        <h2 className="text-2xl font-semibold text-orange-500 border-b-2 pb-2 mb-4">
-          Mexikansk Streetfood
-        </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          {/* Beef Tacos */}
-          <div className="flex flex-col items-center">
-            <div className="flex justify-center mb-4">
-              <img
-                src="https://example.com/gulab-jamun.jpg"
-                alt="Gulab Jamun"
-                className="w-60 h-60 object-cover rounded"
-              />
-            </div>
-            <div className="text-center">
-              <p className="font-semibold">Beef Tacos</p>
               <p className="text-gray-600">
-                Grillade grönsaker och saftig köttfyllning, inlindade i mjuka
-                tortillas och toppade med salsa och guacamole. Perfekta för en
-                färgstark och smakfull måltid! Njut av en härlig fiesta av
-                smaker i varje tugga!
-              </p>
-            </div>
-          </div>
-
-          {/* Fajita Tacos */}
-          <div className="flex flex-col items-center">
-            <div className="flex justify-center mb-4">
-              <img
-                src="https://example.com/kheer.jpg"
-                alt="Kheer"
-                className="w-60 h-60 object-cover rounded"
-              />
-            </div>
-            <div className="text-center">
-              <p className="font-semibold">Fajita Tacos</p>
-              <p className="text-gray-600">
-                Grillade grönsaker och saftig köttfyllning, inlindade i mjuka
-                tortillas och toppade med salsa och guacamole. Perfekta för en
-                färgstark och smakfull måltid! Njut av en härlig fiesta av
-                smaker i varje tugga!
-              </p>
-            </div>
-          </div>
-
-          {/* Quesadilla Chicken Tacos */}
-          <div className="flex flex-col items-center">
-            <div className="flex justify-center mb-4">
-              <img
-                src="https://example.com/kheer.jpg"
-                alt="Kheer"
-                className="w-60 h-60 object-cover rounded"
-              />
-            </div>
-            <div className="text-center">
-              <p className="font-semibold">Quesadilla Chicken Tacos </p>
-              <p className="text-gray-600">
-                Saftig kyckling och smält ost mellan krispiga tortillas,
-                inlindade med fräscha grönsaker. Perfekta för en smakfull och
-                mättande måltid! Njut av en läcker fusion av smaker i varje
-                tugga!
-              </p>
-            </div>
-          </div>
-
-          {/* Texas Chilli Tacos */}
-          <div className="flex flex-col items-center">
-            <div className="flex justify-center mb-4">
-              <img
-                src="https://example.com/kheer.jpg"
-                alt="Kheer"
-                className="w-60 h-60 object-cover rounded"
-              />
-            </div>
-            <div className="text-center">
-              <p className="font-semibold">Texas Chilli Tacos</p>
-              <p className="text-gray-600">
-                Kryddig och smakrik chili fylld med bönor och kött, inlindad i
-                mjuka tortillas. Perfekta för en mättande och värmande måltid!
-                Njut av en äkta smak av Texas i varje tugga!
-              </p>
-            </div>
-          </div>
-
-          {/* Vegetarian Frijoles Tacos */}
-          <div className="flex flex-col items-center">
-            <div className="flex justify-center mb-4">
-              <img
-                src="https://example.com/kheer.jpg"
-                alt="Kheer"
-                className="w-60 h-60 object-cover rounded"
-              />
-            </div>
-            <div className="text-center">
-              <p className="font-semibold">Vegetarian Frijoles Tacos </p>
-              <p className="text-gray-600">
-                Kryddiga bönor inlindade i mjuka tortillas, toppade med fräscha
-                grönsaker och avokado. Perfekta för en lätt och smakrik måltid!
-                Njut av en härlig vegetarisk smakupplevelse i varje tugga!
-              </p>
-            </div>
-          </div>
-
-          {/* Fish Tacos */}
-          <div className="flex flex-col items-center">
-            <div className="flex justify-center mb-4">
-              <img
-                src="https://example.com/kheer.jpg"
-                alt="Kheer"
-                className="w-60 h-60 object-cover rounded"
-              />
-            </div>
-            <div className="text-center">
-              <p className="font-semibold">Fish Tacos</p>
-              <p className="text-gray-600">
-                Fräscha fiskfiléer stekta till perfektion, inlindade i mjuka
-                tortillas med krispiga grönsaker och en zesty sås. Perfekta för
-                en lätt och smakfull måltid! Njut av en läcker
-                havsmatsupplevelse i varje tugga!
-              </p>
-            </div>
-          </div>
-        </div>
-      </Card>
-      {/* Asiatisk Streetfood Section */}
-      <Card className="w-full max-w-6xl mb-6">
-        <h2 className="text-2xl font-semibold text-orange-500 border-b-2 pb-2 mb-4">
-          Asiatisk Streetfood
-        </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          {/* Crispigt Chicken Bao */}
-          <div className="flex flex-col items-center">
-            <div className="flex justify-center mb-4">
-              <img
-                src="https://example.com/gulab-jamun.jpg"
-                alt="Gulab Jamun"
-                className="w-60 h-60 object-cover rounded"
-              />
-            </div>
-            <div className="text-center">
-              <p className="font-semibold">Crispigt Chicken Bao</p>
-              <p className="text-gray-600">
-                Mör kyckling med krispig yta, inlindad i mjuka bao-bröd och
-                toppad med fräscha grönsaker och sås. Perfekta för en smakfull
-                och lätt måltid! Njut av en asiatisk delikatess i varje tugga!
-              </p>
-            </div>
-          </div>
-
-          {/* Halloumi Bao */}
-          <div className="flex flex-col items-center">
-            <div className="flex justify-center mb-4">
-              <img
-                src="https://example.com/kheer.jpg"
-                alt="Kheer"
-                className="w-60 h-60 object-cover rounded"
-              />
-            </div>
-            <div className="text-center">
-              <p className="font-semibold">Halloumi Bao</p>
-              <p className="text-gray-600">
-                Grillad halloumi i mjuka bao-bröd, fylld med fräscha grönsaker
-                och en smakrik sås. Perfekta för en vegetarisk och lätt måltid!
-                Njut av en härlig fusion av smaker i varje tugga!
-              </p>
-            </div>
-          </div>
-
-          {/* Tempura Bao */}
-          <div className="flex flex-col items-center">
-            <div className="flex justify-center mb-4">
-              <img
-                src="https://example.com/kheer.jpg"
-                alt="Kheer"
-                className="w-60 h-60 object-cover rounded"
-              />
-            </div>
-            <div className="text-center">
-              <p className="font-semibold">Tempura Bao</p>
-              <p className="text-gray-600">
-                Krispiga tempurafyllda grönsaker inlindade i mjuka bao-bröd,
-                toppade med en smakrik sås och fräscha grönsaker. Perfekta för
-                en lätt och fräsch måltid! Njut av en läcker asiatisk
-                smakupplevelse i varje tugga!
-              </p>
-            </div>
-          </div>
-
-          {/* Tofu Bao */}
-          <div className="flex flex-col items-center">
-            <div className="flex justify-center mb-4">
-              <img
-                src="https://example.com/kheer.jpg"
-                alt="Kheer"
-                className="w-60 h-60 object-cover rounded"
-              />
-            </div>
-            <div className="text-center">
-              <p className="font-semibold">Tofu Bao</p>
-              <p className="text-gray-600">
-                Mjuk tofu marinerad och grillad, inlindad i mjuka bao-bröd med
-                fräscha grönsaker och en smakrik sås. Perfekta för en
-                växtbaserad och lätt måltid! Njut av en härlig smakupplevelse i
-                varje tugga!
-              </p>
-            </div>
-          </div>
-
-          {/* Gyokatsu Bao*/}
-          <div className="flex flex-col items-center">
-            <div className="flex justify-center mb-4">
-              <img
-                src="https://example.com/kheer.jpg"
-                alt="Kheer"
-                className="w-60 h-60 object-cover rounded"
-              />
-            </div>
-            <div className="text-center">
-              <p className="font-semibold">Gyokatsu Bao</p>
-              <p className="text-gray-600">
-                Mör gyokatsu (panerad och friterad fisk) inlindad i mjuka
-                bao-bröd, toppad med krispiga grönsaker och en läcker sås.
-                Perfekta för en smakfull och unik måltid! Njut av en asiatisk
-                delikatess i varje tugga!
-              </p>
-            </div>
-          </div>
-
-          {/* Yakisoba Nudlar */}
-          <div className="flex flex-col items-center">
-            <div className="flex justify-center mb-4">
-              <img
-                src="https://example.com/kheer.jpg"
-                alt="Kheer"
-                className="w-60 h-60 object-cover rounded"
-              />
-            </div>
-            <div className="text-center">
-              <p className="font-semibold">Yakisoba Nudlar</p>
-              <p className="text-gray-600">
-                Wokade nudlar med färska grönsaker och smakrik sås, perfekt för
-                en snabb och läcker måltid! Njut av en härlig asiatisk
-                smakupplevelse i varje tugga!
+                Friterade grönsaker (Spenat, blomkål, ärtor, lök) i kikärtsmjöl
+                serveras med pommes frites, isbergssallad, tomat, rödlök och
+                tamarindsås.
               </p>
             </div>
           </div>
@@ -634,9 +544,9 @@ export default function Menu() {
 
       {/* Call to Action */}
       <Link to="/book">
-      <Button gradientDuoTone="pinkToOrange" className="mt-2">
-        BOKA OSS
-      </Button>
+        <Button gradientDuoTone="pinkToOrange" className="mt-2">
+          BOKA OSS
+        </Button>
       </Link>
     </div>
   );
