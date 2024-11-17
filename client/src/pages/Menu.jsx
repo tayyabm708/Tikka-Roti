@@ -1,9 +1,32 @@
 import React from "react";
-import { Card, Button, Badge } from "flowbite-react";
+import { Card, Button } from "flowbite-react";
+import SamosaTallrik from "../assets/TIKKA ROTI FOOD TRUCK/Samosa Tallrik.jpg";
+import YakisobaNudlar from "../assets/TIKKA ROTI FOOD TRUCK/Yakisoba Nudlar.webp";
 import PakoraTallrik from "../assets/TIKKA ROTI FOOD TRUCK/Pakora Tallrik.jpg";
 import ChickenTikkaRulle from "../assets/TIKKA ROTI FOOD TRUCK/Chicken Tikka Rulle.jpg";
-import SamosaTallrik from "../assets/TIKKA ROTI FOOD TRUCK/Samosa Tallrik.jpg";
-import SmashBurger from "../assets/TIKKA ROTI FOOD TRUCK/Smash Burger.webp";
+import SmashBurger from "../assets/TIKKA ROTI FOOD TRUCK/Smash Burger.jpg";
+import AmericanBurger from "../assets/TIKKA ROTI FOOD TRUCK/American Burger.jpg";
+import MexicanBurger from "../assets/TIKKA ROTI FOOD TRUCK/Mexican Burger.jpg";
+import SmokeyBurger from "../assets/TIKKA ROTI FOOD TRUCK/Smokey BBQ Burger.jpg";
+import HalloumiBurger from "../assets/TIKKA ROTI FOOD TRUCK/Halloumi Burger.jpg";
+import GyrosPita from "../assets/TIKKA ROTI FOOD TRUCK/Gyros i Pitabrod.jpg";
+import Souvlaki from "../assets/TIKKA ROTI FOOD TRUCK/Souvlaki.jpg";
+import Soutzokakia from "../assets/TIKKA ROTI FOOD TRUCK/Soutzokakia.jpg";
+import Frasig from "../assets/TIKKA ROTI FOOD TRUCK/Frasig.jpg";
+import GyrosTallrik from "../assets/TIKKA ROTI FOOD TRUCK/GyrosTallrik.jpg";
+import TacoBurger from "../assets/TIKKA ROTI FOOD TRUCK/TacoBurger.jpg";
+import Enchillada from "../assets/TIKKA ROTI FOOD TRUCK/Enchillada.jpg";
+import Quesadillas from "../assets/TIKKA ROTI FOOD TRUCK/Quesadillas.jpg";
+import TacosSpecial from "../assets/TIKKA ROTI FOOD TRUCK/TacosSpecial.jpg";
+import Fajitas from "../assets/TIKKA ROTI FOOD TRUCK/Fajitas.jpg";
+import VeggieTacos from "../assets/TIKKA ROTI FOOD TRUCK/VegieTacos.jpg";
+import Yakisoba from "../assets/TIKKA ROTI FOOD TRUCK/Yakisoba.jpg";
+import TikkaBaoBun from "../assets/TIKKA ROTI FOOD TRUCK/TikkaBaoBun.jpg";
+import GrilloumiBaoBun from "../assets/TIKKA ROTI FOOD TRUCK/GrilloumiBaoBun.jpg";
+import ExoticPokeBowl from "../assets/TIKKA ROTI FOOD TRUCK/Exotic.jpg";
+import TikkaTallrik from "../assets/TIKKA ROTI FOOD TRUCK/TikkaTallrik.jpg";
+import TandooriTallrik from "../assets/TIKKA ROTI FOOD TRUCK/TandooriTallrik.jpg";
+import Cevape from "../assets/TIKKA ROTI FOOD TRUCK/Cevape.jpg";
 import { Link } from "react-router-dom";
 
 export default function Menu() {
@@ -16,13 +39,13 @@ export default function Menu() {
         <h2 className="text-2xl font-semibold text-orange-500 border-b-2 pb-2 mb-4">
           Street Burgers
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {/* Smash Burger */}
           <div className="flex flex-col items-center">
             <div className="flex justify-center mb-4">
               <img
                 src={SmashBurger}
-                alt="Pakora Platter"
+                alt="Smash Burger"
                 className="w-60 h-60 object-cover rounded"
               />
             </div>
@@ -40,8 +63,8 @@ export default function Menu() {
           <div className="flex flex-col items-center">
             <div className="flex justify-center mb-4">
               <img
-                src={SamosaTallrik}
-                alt="Vegetable Samosa"
+                src={SmokeyBurger}
+                alt="Smokey Barbeque Burger"
                 className="w-60 h-60 object-cover rounded"
               />
             </div>
@@ -59,8 +82,8 @@ export default function Menu() {
           <div className="flex flex-col items-center">
             <div className="flex justify-center mb-4">
               <img
-                src={SamosaTallrik}
-                alt="Vegetable Samosa"
+                src={AmericanBurger}
+                alt="American Burger"
                 className="w-60 h-60 object-cover rounded"
               />
             </div>
@@ -78,8 +101,8 @@ export default function Menu() {
           <div className="flex flex-col items-center">
             <div className="flex justify-center mb-4">
               <img
-                src={SamosaTallrik}
-                alt="Vegetable Samosa"
+                src={MexicanBurger}
+                alt="Mexican Burger"
                 className="w-60 h-60 object-cover rounded"
               />
             </div>
@@ -97,8 +120,8 @@ export default function Menu() {
           <div className="flex flex-col items-center">
             <div className="flex justify-center mb-4">
               <img
-                src={SamosaTallrik}
-                alt="Vegetable Samosa"
+                src={HalloumiBurger}
+                alt="Halloumi Burger"
                 className="w-60 h-60 object-cover rounded"
               />
             </div>
@@ -119,13 +142,13 @@ export default function Menu() {
         <h2 className="text-2xl font-semibold text-orange-500 border-b-2 pb-2 mb-4">
           Grekisk Streetfood
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {/* Gyros i pitabröd */}
           <div className="flex flex-col items-center">
             <div className="flex justify-center mb-4">
               <img
-                src={ChickenTikkaRulle}
-                alt="Chicken Tikka Rulle"
+                src={GyrosPita}
+                alt="Gyros i pitabröd"
                 className="w-60 h-60 object-cover rounded"
               />
             </div>
@@ -143,8 +166,8 @@ export default function Menu() {
           <div className="flex flex-col items-center">
             <div className="flex justify-center mb-4">
               <img
-                src="https://example.com/lamb-karahi.jpg"
-                alt="Lamb Karahi"
+                src={Souvlaki}
+                alt="Souvlaki Chicken"
                 className="w-60 h-60 object-cover rounded"
               />
             </div>
@@ -162,8 +185,8 @@ export default function Menu() {
           <div className="flex flex-col items-center">
             <div className="flex justify-center mb-4">
               <img
-                src="https://example.com/lamb-karahi.jpg"
-                alt="Lamb Karahi"
+                src={Soutzokakia}
+                alt="Soutzokakia"
                 className="w-60 h-60 object-cover rounded"
               />
             </div>
@@ -180,8 +203,8 @@ export default function Menu() {
           <div className="flex flex-col items-center">
             <div className="flex justify-center mb-4">
               <img
-                src="https://example.com/lamb-karahi.jpg"
-                alt="Lamb Karahi"
+                src={Frasig}
+                alt="Frasig halloumi i pitabröd"
                 className="w-60 h-60 object-cover rounded"
               />
             </div>
@@ -198,8 +221,8 @@ export default function Menu() {
           <div className="flex flex-col items-center justify-center">
             <div className="flex justify-center mb-4">
               <img
-                src="https://example.com/lamb-karahi.jpg"
-                alt="Lamb Karahi"
+                src={GyrosTallrik}
+                alt="Gyros Tallrik"
                 className="w-60 h-60 object-cover rounded"
               />
             </div>
@@ -215,18 +238,44 @@ export default function Menu() {
         </div>
       </Card>
 
+      {/* Bosnian Specialty Streetfood Section */}
+      <Card className="w-full max-w-6xl mb-6">
+        <h2 className="text-2xl font-semibold text-orange-500 border-b-2 pb-2 mb-4">
+          Bosnian Specialty
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {/* Cevapi */}
+          <div className="flex flex-col items-center">
+            <div className="flex justify-center mb-4">
+              <img
+                src={Cevape}
+                alt="Cevape"
+                className="w-60 h-60 object-cover rounded"
+              />
+            </div>
+            <div className="text-center">
+              <p className="font-semibold">Cevapi</p>
+              <p className="text-gray-600">
+                Grillad färs (Nöt/kalv/lamm) i form av plattor i lepinja bröd
+                serveras med ajvar, kajmak och fin hakade lök.
+              </p>
+            </div>
+          </div>
+        </div>
+      </Card>
+
       {/* Mexikansk Streetfood Section */}
       <Card className="w-full max-w-6xl mb-6">
         <h2 className="text-2xl font-semibold text-orange-500 border-b-2 pb-2 mb-4">
           Mexikansk Streetfood
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {/* Tacos Burger */}
           <div className="flex flex-col items-center">
             <div className="flex justify-center mb-4">
               <img
-                src="https://example.com/gulab-jamun.jpg"
-                alt="Gulab Jamun"
+                src={TacoBurger}
+                alt="Tacos Burger"
                 className="w-60 h-60 object-cover rounded"
               />
             </div>
@@ -243,8 +292,8 @@ export default function Menu() {
           <div className="flex flex-col items-center">
             <div className="flex justify-center mb-4">
               <img
-                src="https://example.com/kheer.jpg"
-                alt="Kheer"
+                src={Enchillada}
+                alt="Enchilada Pollo"
                 className="w-60 h-60 object-cover rounded"
               />
             </div>
@@ -262,8 +311,8 @@ export default function Menu() {
           <div className="flex flex-col items-center">
             <div className="flex justify-center mb-4">
               <img
-                src="https://example.com/kheer.jpg"
-                alt="Kheer"
+                src={Quesadillas}
+                alt="Quesadilla Kyckling"
                 className="w-60 h-60 object-cover rounded"
               />
             </div>
@@ -280,8 +329,8 @@ export default function Menu() {
           <div className="flex flex-col items-center">
             <div className="flex justify-center mb-4">
               <img
-                src="https://example.com/kheer.jpg"
-                alt="Kheer"
+                src={TacosSpecial}
+                alt="Tacos special (Nötfärs)"
                 className="w-60 h-60 object-cover rounded"
               />
             </div>
@@ -299,8 +348,8 @@ export default function Menu() {
           <div className="flex flex-col items-center">
             <div className="flex justify-center mb-4">
               <img
-                src="https://example.com/kheer.jpg"
-                alt="Kheer"
+                src={Fajitas}
+                alt="Fajitas"
                 className="w-60 h-60 object-cover rounded"
               />
             </div>
@@ -317,8 +366,8 @@ export default function Menu() {
           <div className="flex flex-col items-center">
             <div className="flex justify-center mb-4">
               <img
-                src="https://example.com/kheer.jpg"
-                alt="Kheer"
+                src={VeggieTacos}
+                alt="Veggie Tacos"
                 className="w-60 h-60 object-cover rounded"
               />
             </div>
@@ -338,13 +387,13 @@ export default function Menu() {
         <h2 className="text-2xl font-semibold text-orange-500 border-b-2 pb-2 mb-4">
           Asiatisk Streetfood
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {/* Yakisoba Nudlar */}
           <div className="flex flex-col items-center">
             <div className="flex justify-center mb-4">
               <img
-                src="https://example.com/gulab-jamun.jpg"
-                alt="Gulab Jamun"
+                src={Yakisoba}
+                alt="Yakisoba Nudlar"
                 className="w-60 h-60 object-cover rounded"
               />
             </div>
@@ -361,17 +410,16 @@ export default function Menu() {
           <div className="flex flex-col items-center">
             <div className="flex justify-center mb-4">
               <img
-                src="https://example.com/kheer.jpg"
-                alt="Kheer"
+                src={TikkaBaoBun}
+                alt="Chicken Tikka Bao Buns"
                 className="w-60 h-60 object-cover rounded"
               />
             </div>
             <div className="text-center">
-              <p className="font-semibold">Kyckling Bao Buns</p>
+              <p className="font-semibold">Chicken Tikka Bao Buns</p>
               <p className="text-gray-600">
                 Grillad kyckling file serveras med picklade rödlök,
-                gochujangpasta ( chilimajonäs), röstad sesamfrö, rödkål och
-                tomat.
+                myntayoghurtsås, röstad sesamfrö, rödkål och tomat.
               </p>
             </div>
           </div>
@@ -380,8 +428,8 @@ export default function Menu() {
           <div className="flex flex-col items-center">
             <div className="flex justify-center mb-4">
               <img
-                src="https://example.com/kheer.jpg"
-                alt="Kheer"
+                src={GrilloumiBaoBun}
+                alt="Grilloumi Bao Buns"
                 className="w-60 h-60 object-cover rounded"
               />
             </div>
@@ -401,7 +449,7 @@ export default function Menu() {
         <h2 className="text-2xl font-semibold text-orange-500 border-b-2 pb-2 mb-4">
           Indisk/Pakistani
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {/*Chicken Tikka Rulle */}
           {/* <div className="flex flex-col items-center">
             <div className="flex justify-center mb-4">
@@ -462,31 +510,29 @@ export default function Menu() {
           </div> */}
 
           {/* Pakora Vegan Rulle */}
-          {/* <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center">
             <div className="flex justify-center mb-4">
               <img
-                src="https://example.com/kheer.jpg"
-                alt="Kheer"
+                src={ExoticPokeBowl}
+                alt="Exotic Poke Bowl"
                 className="w-60 h-60 object-cover rounded"
               />
             </div>
             <div className="text-center">
-              <p className="font-semibold">Pakora Vegan Rulle</p>
+              <p className="font-semibold">Exotic Poke Bowl</p>
               <p className="text-gray-600">
-                Krispiga pakoras tillverkade av färska grönsaker och kryddor,
-                rullade i mjukt bröd med fräscha grönsaker och smakrik vegansk
-                sås. Perfekt för en lätt och mättande måltid! Njut av en läcker
-                vegansk smakupplevelse i varje tugga!
+                Chicken Tikka(Grillad kyckling), Mango, Feta ost, Färg glada
+                grönsaker, färsk mynta, röda kidneybönor.
               </p>
             </div>
-          </div> */}
+          </div>
 
           {/* Chicken Tikka Tallrik */}
           <div className="flex flex-col items-center">
             <div className="flex justify-center mb-4">
               <img
-                src="https://example.com/kheer.jpg"
-                alt="Kheer"
+                src={TikkaTallrik}
+                alt="Chicken Tikka Tallrik"
                 className="w-60 h-60 object-cover rounded"
               />
             </div>
@@ -503,8 +549,8 @@ export default function Menu() {
           <div className="flex flex-col items-center">
             <div className="flex justify-center mb-4">
               <img
-                src="https://example.com/kheer.jpg"
-                alt="Kheer"
+                src={TandooriTallrik}
+                alt="Chicken Tandoori Tallrik"
                 className="w-60 h-60 object-cover rounded"
               />
             </div>
@@ -523,8 +569,8 @@ export default function Menu() {
           <div className="flex flex-col items-center">
             <div className="flex justify-center mb-4">
               <img
-                src="https://example.com/kheer.jpg"
-                alt="Kheer"
+                src={PakoraTallrik}
+                alt="Pakora Tallrik"
                 className="w-60 h-60 object-cover rounded"
               />
             </div>

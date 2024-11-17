@@ -8,9 +8,9 @@ export default {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['Permanent Marker', 'cursive']
-      }
+      // fontFamily: {
+      //   sans: ['Permanent Marker', 'cursive']
+      // }
     },
   },
   plugins: [

@@ -46,7 +46,7 @@ export default function FooterCom() {
                 </Link>
               </Footer.LinkGroup>
             </div>
-            <div>
+            {/* <div>
               <Footer.Title className="text-black" title="Legal" />
               <Footer.LinkGroup col>
                 <Footer.Link className="text-black" href="#">
@@ -56,7 +56,7 @@ export default function FooterCom() {
                   Terms &amp; Conditions
                 </Footer.Link>
               </Footer.LinkGroup>
-            </div>
+            </div> */}
           </div>
         </div>
         <Footer.Divider />
