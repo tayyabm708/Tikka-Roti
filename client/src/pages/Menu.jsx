@@ -1,9 +1,8 @@
 import React from "react";
 import { Card, Button } from "flowbite-react";
+import { Link } from "react-router-dom";
 import SamosaTallrik from "../assets/TIKKA ROTI FOOD TRUCK/Samosa Tallrik.jpg";
-import YakisobaNudlar from "../assets/TIKKA ROTI FOOD TRUCK/Yakisoba Nudlar.webp";
 import PakoraTallrik from "../assets/TIKKA ROTI FOOD TRUCK/Pakora Tallrik.jpg";
-import ChickenTikkaRulle from "../assets/TIKKA ROTI FOOD TRUCK/Chicken Tikka Rulle.jpg";
 import SmashBurger from "../assets/TIKKA ROTI FOOD TRUCK/Smash Burger.jpg";
 import AmericanBurger from "../assets/TIKKA ROTI FOOD TRUCK/American Burger.jpg";
 import MexicanBurger from "../assets/TIKKA ROTI FOOD TRUCK/Mexican Burger.jpg";
@@ -25,17 +24,18 @@ import TikkaBaoBun from "../assets/TIKKA ROTI FOOD TRUCK/TikkaBaoBun.jpg";
 import GrilloumiBaoBun from "../assets/TIKKA ROTI FOOD TRUCK/GrilloumiBaoBun.jpg";
 import ExoticPokeBowl from "../assets/TIKKA ROTI FOOD TRUCK/Exotic.jpg";
 import TikkaTallrik from "../assets/TIKKA ROTI FOOD TRUCK/TikkaTallrik.jpg";
-import TandooriTallrik from "../assets/TIKKA ROTI FOOD TRUCK/TandooriTallrik.jpg";
 import Cevape from "../assets/TIKKA ROTI FOOD TRUCK/Cevape.jpg";
-import { Link } from "react-router-dom";
+import ChickenBiryani from "../assets/TIKKA ROTI FOOD TRUCK/ChickenBiryani.jpg";
+import TikkaMasala from "../assets/TIKKA ROTI FOOD TRUCK/TikkaMasala.jpg";
 
 export default function Menu() {
+  
   return (
-    <div className="flex flex-col items-center p-6 bg-orange-50 min-h-screen">
+    <div className="flex flex-col items-center p-6  min-h-screen">
       <h1 className="text-4xl font-bold  mb-8">Vår Meny</h1>
 
       {/* Burgers Section */}
-      <Card className="w-full max-w-6xl mb-6">
+      <Card className="w-full max-w-6xl mb-6" id="street-burgers">
         <h2 className="text-2xl font-semibold text-orange-500 border-b-2 pb-2 mb-4">
           Street Burgers
         </h2>
@@ -53,8 +53,8 @@ export default function Menu() {
               <p className="font-semibold">Smash Burger (NEXT LEVEL)</p>
               <p className="text-gray-600">
                 Smashed nötfärs (2*100g), cheddarost, grillad jalapeños,
-                guacamole, tortillachips, krispsallad & lätt rostat brioche
-                bröd,,serverad med 9mm mcCain pommes frites.
+                guacamole, tortillachips, dressing, krispsallad & lätt rostat
+                brioche bröd,,serverad med 9mm mcCain pommes frites.
               </p>
             </div>
           </div>
@@ -138,7 +138,7 @@ export default function Menu() {
       </Card>
 
       {/* Grekisk Streetfood Section */}
-      <Card className="w-full max-w-6xl mb-6">
+      <Card className="w-full max-w-6xl mb-6" id="grekisk-streetfood">
         <h2 className="text-2xl font-semibold text-orange-500 border-b-2 pb-2 mb-4">
           Grekisk Streetfood
         </h2>
@@ -239,7 +239,7 @@ export default function Menu() {
       </Card>
 
       {/* Bosnian Specialty Streetfood Section */}
-      <Card className="w-full max-w-6xl mb-6">
+      <Card className="w-full max-w-6xl mb-6" id="bosnian-specialty">
         <h2 className="text-2xl font-semibold text-orange-500 border-b-2 pb-2 mb-4">
           Bosnian Specialty
         </h2>
@@ -265,7 +265,7 @@ export default function Menu() {
       </Card>
 
       {/* Mexikansk Streetfood Section */}
-      <Card className="w-full max-w-6xl mb-6">
+      <Card className="w-full max-w-6xl mb-6" id="mexikansk-streetfood">
         <h2 className="text-2xl font-semibold text-orange-500 border-b-2 pb-2 mb-4">
           Mexikansk Streetfood
         </h2>
@@ -383,7 +383,7 @@ export default function Menu() {
       </Card>
 
       {/* Asiatisk Streetfood Section */}
-      <Card className="w-full max-w-6xl mb-6">
+      <Card className="w-full max-w-6xl mb-6" id="asiatisk-streetfood">
         <h2 className="text-2xl font-semibold text-orange-500 border-b-2 pb-2 mb-4">
           Asiatisk Streetfood
         </h2>
@@ -445,70 +445,11 @@ export default function Menu() {
       </Card>
 
       {/* Indisk/Pakistanisk Section */}
-      <Card className="w-full max-w-6xl mb-6">
+      <Card className="w-full max-w-6xl mb-6" id="indisk-pakistansk">
         <h2 className="text-2xl font-semibold text-orange-500 border-b-2 pb-2 mb-4">
-          Indisk/Pakistani
+          Indisk/Pakistansk
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {/*Chicken Tikka Rulle */}
-          {/* <div className="flex flex-col items-center">
-            <div className="flex justify-center mb-4">
-              <img
-                src="https://example.com/gulab-jamun.jpg"
-                alt="Gulab Jamun"
-                className="w-60 h-60 object-cover rounded"
-              />
-            </div>
-            <div className="text-center">
-              <p className="font-semibold">Chicken Tikka Rulle</p>
-              <p className="text-gray-600">
-                Mör kyckling marinerad i kryddig tikka, rullad i mjukt bröd med
-                fräscha grönsaker och sås. Perfekt för en smakfull och mättande
-                måltid! Njut av en explosiv smakupplevelse i varje tugga!
-              </p>
-            </div>
-          </div> */}
-
-          {/* Chicken Tandoori Rulle */}
-          {/* <div className="flex flex-col items-center">
-            <div className="flex justify-center mb-4">
-              <img
-                src="https://example.com/kheer.jpg"
-                alt="Kheer"
-                className="w-60 h-60 object-cover rounded"
-              />
-            </div>
-            <div className="text-center">
-              <p className="font-semibold">Chicken Tandoori Rulle</p>
-              <p className="text-gray-600">
-                Saftig kyckling marinerad i tandoori-kryddor, rullad i mjukt
-                bröd med fräscha grönsaker och en krämig sås. Perfekt för en
-                smakfull och mättande måltid! Njut av en autentisk indisk
-                smakupplevelse i varje tugga!
-              </p>
-            </div>
-          </div> */}
-
-          {/* Pakora Vegetarisk Rulle */}
-          {/* <div className="flex flex-col items-center">
-            <div className="flex justify-center mb-4">
-              <img
-                src="https://example.com/kheer.jpg"
-                alt="Kheer"
-                className="w-60 h-60 object-cover rounded"
-              />
-            </div>
-            <div className="text-center">
-              <p className="font-semibold">Pakora Vegetarisk Rulle</p>
-              <p className="text-gray-600">
-                Krispiga pakoras gjorda på färska grönsaker, rullade i mjukt
-                bröd med fräscha grönsaker och smakrik sås. Perfekt för en lätt
-                och mättande måltid! Njut av en härlig vegetarisk smakupplevelse
-                i varje tugga!
-              </p>
-            </div>
-          </div> */}
-
           {/* Pakora Vegan Rulle */}
           <div className="flex flex-col items-center">
             <div className="flex justify-center mb-4">
@@ -549,7 +490,7 @@ export default function Menu() {
           <div className="flex flex-col items-center">
             <div className="flex justify-center mb-4">
               <img
-                src={TandooriTallrik}
+                src={TikkaTallrik}
                 alt="Chicken Tandoori Tallrik"
                 className="w-60 h-60 object-cover rounded"
               />
@@ -582,6 +523,61 @@ export default function Menu() {
                 Friterade grönsaker (Spenat, blomkål, ärtor, lök) i kikärtsmjöl
                 serveras med pommes frites, isbergssallad, tomat, rödlök och
                 tamarindsås.
+              </p>
+            </div>
+          </div>
+
+          {/* Samosa Tallrik */}
+          <div className="flex flex-col items-center">
+            <div className="flex justify-center mb-4">
+              <img
+                src={SamosaTallrik}
+                alt="Pakora Tallrik"
+                className="w-60 h-60 object-cover rounded"
+              />
+            </div>
+            <div className="text-center">
+              <p className="font-semibold">Samosa Tallrik </p>
+              <p className="text-gray-600">
+                Friterade piroger med fyllning av kryddig grönsaks blandning.
+                Serveras med tamarindsås och myntayoghurtsås.
+              </p>
+            </div>
+          </div>
+
+          {/* Chicken Biryani  */}
+          <div className="flex flex-col items-center">
+            <div className="flex justify-center mb-4">
+              <img
+                src={ChickenBiryani}
+                alt="Pakora Tallrik"
+                className="w-60 h-60 object-cover rounded"
+              />
+            </div>
+            <div className="text-center">
+              <p className="font-semibold">Chicken Biryani</p>
+              <p className="text-gray-600">
+                Biryani är en smakbomb! Mör kyckling marinerad i kryddad
+                aromatisk yoghurt och serveras med fluffigt ris och
+                karamelliserad lök.
+              </p>
+            </div>
+          </div>
+
+          {/* Tikka MAsala  */}
+          <div className="flex flex-col items-center">
+            <div className="flex justify-center mb-4">
+              <img
+                src={TikkaMasala}
+                alt="Pakora Tallrik"
+                className="w-60 h-60 object-cover rounded"
+              />
+            </div>
+            <div className="text-center">
+              <p className="font-semibold">Tikka Masala</p>
+              <p className="text-gray-600">
+                Krämig och smakrik kyckling gryta serveras med ris,
+                isbergssallad, lök, tomat, myntayoghurtsås och nan bröd.
               </p>
             </div>
           </div>

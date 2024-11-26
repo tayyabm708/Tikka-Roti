@@ -11,7 +11,6 @@ export default function Information() {
         VARFÖR TIKKA ROTI?
       </h2>
 
-      
       <p className="text-lg text-center mb-4 text-gray-600">
         Planerar du för födelsedag, företag, bröllop eller någon annan typ av
         sammankomst? Låt oss göra ditt evenemang minnesvärt med vår autentiska
@@ -19,6 +18,9 @@ export default function Information() {
         världen, levererad med exceptionell service!
       </p>
 
+      <div className="flex flex-col justify-center items-center my-8">
+        <img src={Certificate} alt="certificate" className=" h-100 w-80" />
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
         {/* First Card */}
         <Card className="shadow-md hover:shadow-xl transition-shadow duration-300 p-5 bg-white border rounded-lg">
@@ -69,13 +71,6 @@ export default function Information() {
       </Card>
 
       {/* <Card className="shadow-md hover:shadow-xl transition-shadow duration-300 p-5  border rounded-lg items-center"> */}
-      <div className="flex flex-col justify-center items-center">
-        <img
-          src={Certificate}
-          alt="certificate"
-          className=" h-100 w-80"
-        />
-      </div>
 
       {/* </Card> */}
 

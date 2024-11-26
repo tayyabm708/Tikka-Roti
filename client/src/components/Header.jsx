@@ -11,7 +11,7 @@ export default function Header() {
     <Navbar className=" header border-b-2 text-gray-950 justify-between py-2` bg-[#f19c48]">
       <Link
         to="/"
-        className="self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white"
+        className="self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white "
       >
         <img
           className="h-20 w-20 md:h-24 md:w-24 lg:h-32 lg:w-32 mx-auto"

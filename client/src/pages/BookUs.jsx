@@ -99,7 +99,7 @@ export default function BookUs() {
 
   return (
     <div className="min-h-screen mt-20">
-      <p className="text-center text-3xl font-bold pb-4 mb-4">BOKA OSS</p>
+      <p className="text-center text-4xl font-bold pb-4 mb-4">BOKA OSS</p>
       <div className="flex p-3 max-w-3xl mx-auto flex-col md:flex-row md:items-center gap-12">
         {/*Left Section*/}
         <div className="flex-1 ml-5 justify-center">
@@ -117,7 +117,7 @@ export default function BookUs() {
               <strong>Phone:</strong> +46 123 456 789
             </p>
             <p className="text-md text-gray-600 dark:text-gray-400 mt-2">
-              <strong>Email:</strong> contact@tikkaroti.com
+              <strong>Email:</strong> info@tikkaroti.se
             </p>
 
             {/* Social Media Links */}
