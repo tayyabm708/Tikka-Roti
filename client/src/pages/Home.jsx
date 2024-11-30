@@ -35,10 +35,17 @@ export default function Home() {
         <p className="text-xl mb-4 items-center text-center mt-7 font-bold  ">
           Välj från följande meny:
         </p>
-        <div className="mt-4 grid grid-cols-2 md: flex flex-row gap-4 ">
-          <Link to="/menu#street-burgers">
+        
+        {/* Menu Items List */}
+        <div className="flex flex-wrap justify-center gap-4 mt-2">
+          <Link to="/menu/#mexikansk-streetfood">
             <Button gradientDuoTone="pinkToOrange" className="mt-2">
-              Street Burgers
+              Mexikansk Streetfood
+            </Button>
+          </Link>
+          <Link to="/menu#asiatisk-streetfood">
+            <Button gradientDuoTone="pinkToOrange" className="mt-2">
+              Asiatisk Streetfood
             </Button>
           </Link>
           <Link to="/menu#grekisk-streetfood">
@@ -51,14 +58,9 @@ export default function Home() {
               Bosnian Specialty
             </Button>
           </Link>
-          <Link to="/menu#mexikansk-streetfood">
+          <Link to="/menu#street-burgers">
             <Button gradientDuoTone="pinkToOrange" className="mt-2">
-              Mexikansk Streetfood
-            </Button>
-          </Link>
-          <Link to="/menu#asiatisk-streetfood">
-            <Button gradientDuoTone="pinkToOrange" className="mt-2">
-              Asiatisk Streetfood
+              Street Burgers
             </Button>
           </Link>
           <Link to="/menu#indisk-pakistansk">
@@ -68,6 +70,7 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
       {/* Services Section */}
       <section className="max-w-6xl mx-auto px-4 py-10 bg-white">
         <h2 className="text-3xl font-bold text-center mb-6">Våra tjänster</h2>
@@ -116,6 +119,7 @@ export default function Home() {
           </Card>
         </div>
       </section>
+
       {/* Our Clients Section */}
       <section className="py-10 ">
         <h2 className="text-3xl font-bold text-center mb-10">Våra Kunder</h2>
@@ -148,7 +152,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div className=" flex justify-center items-center my-8">
+
+      <div className="flex justify-center items-center my-8">
         <Link to="/info">
           <Button gradientDuoTone="pinkToOrange" className="mt-2">
             VARFÖR TIKKA ROTI?

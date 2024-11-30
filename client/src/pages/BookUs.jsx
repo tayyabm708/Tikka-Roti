@@ -29,6 +29,7 @@ export default function BookUs() {
   const menuOptions = [
     "Burgers",
     "Grekisk Streetfood",
+    "Bosnian Specialty",
     "Indisk/Pakistani",
     "Mexikansk Streetfood",
     "Asiatisk Streetfood",
@@ -60,7 +61,7 @@ export default function BookUs() {
 
     try {
       setLoading(true);
-      const response = await fetch("https://formspree.io/f/movqaddg", {
+      const response = await fetch("https://formspree.io/f/mnnqogya", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -109,12 +110,12 @@ export default function BookUs() {
             <img
               src={TikkaRotiPNG}
               alt="Tikka Roti"
-              className="h-32 w-32 md:h-40 md:w-40 lg:h-44 lg:w-44 mb-2"
+              className="h-40 w:40 md:h-48 md:w-48 lg:h-60 lg:w-60 mb-2"
             />
 
             {/* Additional Contact Info */}
             <p className="text-md text-gray-600 dark:text-gray-400 mt-2">
-              <strong>Phone:</strong> +46 123 456 789
+              <strong>Phone:</strong> +46 737 541 333
             </p>
             <p className="text-md text-gray-600 dark:text-gray-400 mt-2">
               <strong>Email:</strong> info@tikkaroti.se
